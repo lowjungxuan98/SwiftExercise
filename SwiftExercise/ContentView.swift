@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    let page = pages
+    @State var showModal = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ForEach(pages, id: \.self) { page in
+                    NavigationLink {
+                        switch page {
+                        case "Restful API": StudentListView()
+                        case "Socket IO": SocketIOView()
+                        default: StudentListView()
+                        }
+                    } label: {
+                        Text(page)
+                    }
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("Swift Exercise")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .padding()
     }
 }
 
