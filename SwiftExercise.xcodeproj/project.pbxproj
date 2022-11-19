@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54634E91292938F500A34B14 /* ParallaxCardEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54634E90292938F500A34B14 /* ParallaxCardEffect.swift */; };
+		546AC5F829290C180067EAEE /* AnimatedStickyHeaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AC5F729290C180067EAEE /* AnimatedStickyHeaderMainView.swift */; };
 		546E8303291F2E9D00DB556E /* SwiftExerciseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8302291F2E9D00DB556E /* SwiftExerciseApp.swift */; };
 		546E8305291F2E9D00DB556E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8304291F2E9D00DB556E /* ContentView.swift */; };
 		546E8307291F2E9F00DB556E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546E8306291F2E9F00DB556E /* Assets.xcassets */; };
 		546E830A291F2E9F00DB556E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546E8309291F2E9F00DB556E /* Preview Assets.xcassets */; };
 		546E8311291F328B00DB556E /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8310291F328B00DB556E /* Pages.swift */; };
 		546E8316291F396700DB556E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8315291F396700DB556E /* Model.swift */; };
-		546E8318291F3AAF00DB556E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8317291F3AAF00DB556E /* ViewModel.swift */; };
+		546E8318291F3AAF00DB556E /* StudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8317291F3AAF00DB556E /* StudentViewModel.swift */; };
 		546E831C291F3E5900DB556E /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E831B291F3E5900DB556E /* StudentListView.swift */; };
 		546E831E291F40CC00DB556E /* StudentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E831D291F40CC00DB556E /* StudentDetailView.swift */; };
 		546E8321291F89AA00DB556E /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 546E8320291F89AA00DB556E /* SocketIO */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54634E90292938F500A34B14 /* ParallaxCardEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCardEffect.swift; sourceTree = "<group>"; };
+		546AC5F729290C180067EAEE /* AnimatedStickyHeaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedStickyHeaderMainView.swift; sourceTree = "<group>"; };
 		546E82FF291F2E9D00DB556E /* SwiftExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546E8302291F2E9D00DB556E /* SwiftExerciseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExerciseApp.swift; sourceTree = "<group>"; };
 		546E8304291F2E9D00DB556E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,7 +33,7 @@
 		546E8309291F2E9F00DB556E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		546E8310291F328B00DB556E /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		546E8315291F396700DB556E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		546E8317291F3AAF00DB556E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		546E8317291F3AAF00DB556E /* StudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewModel.swift; sourceTree = "<group>"; };
 		546E831B291F3E5900DB556E /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
 		546E831D291F40CC00DB556E /* StudentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailView.swift; sourceTree = "<group>"; };
 		546E8322291F8D0E00DB556E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +53,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54634E8D2929386E00A34B14 /* 3D Parallax Card Effect */ = {
+			isa = PBXGroup;
+			children = (
+				54634E90292938F500A34B14 /* ParallaxCardEffect.swift */,
+			);
+			path = "3D Parallax Card Effect";
+			sourceTree = "<group>";
+		};
+		546AC5F629290BEA0067EAEE /* Animated Sticky Header */ = {
+			isa = PBXGroup;
+			children = (
+				546AC5F729290C180067EAEE /* AnimatedStickyHeaderMainView.swift */,
+			);
+			path = "Animated Sticky Header";
+			sourceTree = "<group>";
+		};
 		546E82F6291F2E9D00DB556E = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +88,8 @@
 		546E8301291F2E9D00DB556E /* SwiftExercise */ = {
 			isa = PBXGroup;
 			children = (
+				54634E8D2929386E00A34B14 /* 3D Parallax Card Effect */,
+				546AC5F629290BEA0067EAEE /* Animated Sticky Header */,
 				546E8341291F9A5000DB556E /* SocketIO */,
 				546E8322291F8D0E00DB556E /* Info.plist */,
 				546E8314291F393400DB556E /* Restful API */,
@@ -92,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				546E8315291F396700DB556E /* Model.swift */,
-				546E8317291F3AAF00DB556E /* ViewModel.swift */,
+				546E8317291F3AAF00DB556E /* StudentViewModel.swift */,
 				546E831B291F3E5900DB556E /* StudentListView.swift */,
 				546E831D291F40CC00DB556E /* StudentDetailView.swift */,
 			);
@@ -184,13 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546AC5F829290C180067EAEE /* AnimatedStickyHeaderMainView.swift in Sources */,
 				546E8345291F9ADB00DB556E /* SocketService.swift in Sources */,
 				546E831C291F3E5900DB556E /* StudentListView.swift in Sources */,
+				54634E91292938F500A34B14 /* ParallaxCardEffect.swift in Sources */,
 				546E8343291F9A6000DB556E /* SocketIOView.swift in Sources */,
 				546E8311291F328B00DB556E /* Pages.swift in Sources */,
 				546E8305291F2E9D00DB556E /* ContentView.swift in Sources */,
 				546E8303291F2E9D00DB556E /* SwiftExerciseApp.swift in Sources */,
-				546E8318291F3AAF00DB556E /* ViewModel.swift in Sources */,
+				546E8318291F3AAF00DB556E /* StudentViewModel.swift in Sources */,
 				546E8316291F396700DB556E /* Model.swift in Sources */,
 				546E831E291F40CC00DB556E /* StudentDetailView.swift in Sources */,
 			);

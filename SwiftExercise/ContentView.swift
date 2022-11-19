@@ -8,20 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    let page = pages
+//    let page = pages
     @State var showModal = false
     var body: some View {
         NavigationView {
             List {
-                ForEach(pages, id: \.self) { page in
+                ForEach(Pages.allCases, id: \.self) { page in
                     NavigationLink {
                         switch page {
-                        case "Restful API": StudentListView()
-                        case "Socket IO": SocketIOView()
-                        default: StudentListView()
+                        case .restApi:
+                            StudentListView()
+                        case .socketIO:
+                            SocketIOView()
+                        case .animatedStickyHeader:
+                            AnimatedStickyHeaderMainView()
+                        case .parallaxCardEffect:
+                            ParallaxCardEffect()
                         }
                     } label: {
-                        Text(page)
+                        Text(page.label)
                     }
                 }
             }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StudentDetailView: View {
-    @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: StudentViewModel
     var data: StudentModel? = nil
     @Binding var firstName: String
     @Binding var lastName: String

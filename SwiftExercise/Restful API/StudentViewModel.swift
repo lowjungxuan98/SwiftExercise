@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class ViewModel: ObservableObject {
+class StudentViewModel: ObservableObject {
     @Published var items = [StudentModel]()
     let prefixUrl = "http://localhost:3000/api/student"
     init() {

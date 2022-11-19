@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StudentListView: View {
-    @EnvironmentObject var viewModel: ViewModel
+    @EnvironmentObject var viewModel: StudentViewModel
     @State var showStudentDetail = false
     @State var firstName = ""
     @State var lastName = ""
