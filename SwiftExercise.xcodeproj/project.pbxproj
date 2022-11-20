@@ -21,6 +21,12 @@
 		546E8321291F89AA00DB556E /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 546E8320291F89AA00DB556E /* SocketIO */; };
 		546E8343291F9A6000DB556E /* SocketIOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8342291F9A6000DB556E /* SocketIOView.swift */; };
 		546E8345291F9ADB00DB556E /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8344291F9ADB00DB556E /* SocketService.swift */; };
+		54ADDFB82929F70D00A1CAC3 /* TaskManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFB72929F70D00A1CAC3 /* TaskManagerView.swift */; };
+		54ADDFBA2929F83000A1CAC3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFB92929F83000A1CAC3 /* Persistence.swift */; };
+		54ADDFBD2929F85500A1CAC3 /* Task_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFBB2929F85500A1CAC3 /* Task_Manager.xcdatamodeld */; };
+		54ADDFC1292A023800A1CAC3 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFC0292A023800A1CAC3 /* TaskViewModel.swift */; };
+		54ADDFC3292A0BAB00A1CAC3 /* AddNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFC2292A0BAB00A1CAC3 /* AddNewTask.swift */; };
+		54ADDFC5292A771100A1CAC3 /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFC4292A771100A1CAC3 /* DynamicFilteredView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,12 @@
 		546E8322291F8D0E00DB556E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		546E8342291F9A6000DB556E /* SocketIOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOView.swift; sourceTree = "<group>"; };
 		546E8344291F9ADB00DB556E /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		54ADDFB72929F70D00A1CAC3 /* TaskManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerView.swift; sourceTree = "<group>"; };
+		54ADDFB92929F83000A1CAC3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		54ADDFBC2929F85500A1CAC3 /* Task_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task_Manager.xcdatamodel; sourceTree = "<group>"; };
+		54ADDFC0292A023800A1CAC3 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		54ADDFC2292A0BAB00A1CAC3 /* AddNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTask.swift; sourceTree = "<group>"; };
+		54ADDFC4292A771100A1CAC3 /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,7 @@
 		546E8301291F2E9D00DB556E /* SwiftExercise */ = {
 			isa = PBXGroup;
 			children = (
+				54ADDFB62929F6F200A1CAC3 /* Core Data */,
 				54634E8D2929386E00A34B14 /* 3D Parallax Card Effect */,
 				546AC5F629290BEA0067EAEE /* Animated Sticky Header */,
 				546E8341291F9A5000DB556E /* SocketIO */,
@@ -128,6 +141,35 @@
 				546E8344291F9ADB00DB556E /* SocketService.swift */,
 			);
 			path = SocketIO;
+			sourceTree = "<group>";
+		};
+		54ADDFB62929F6F200A1CAC3 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				54ADDFBF292A021700A1CAC3 /* View */,
+				54ADDFBE2929FE6000A1CAC3 /* ViewModel */,
+				54ADDFB92929F83000A1CAC3 /* Persistence.swift */,
+				54ADDFBB2929F85500A1CAC3 /* Task_Manager.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		54ADDFBE2929FE6000A1CAC3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54ADDFC0292A023800A1CAC3 /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54ADDFBF292A021700A1CAC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54ADDFB72929F70D00A1CAC3 /* TaskManagerView.swift */,
+				54ADDFC2292A0BAB00A1CAC3 /* AddNewTask.swift */,
+				54ADDFC4292A771100A1CAC3 /* DynamicFilteredView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,15 +249,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				546AC5F829290C180067EAEE /* AnimatedStickyHeaderMainView.swift in Sources */,
+				54ADDFC3292A0BAB00A1CAC3 /* AddNewTask.swift in Sources */,
+				54ADDFB82929F70D00A1CAC3 /* TaskManagerView.swift in Sources */,
 				546E8345291F9ADB00DB556E /* SocketService.swift in Sources */,
 				546E831C291F3E5900DB556E /* StudentListView.swift in Sources */,
 				54634E91292938F500A34B14 /* ParallaxCardEffect.swift in Sources */,
 				546E8343291F9A6000DB556E /* SocketIOView.swift in Sources */,
+				54ADDFBD2929F85500A1CAC3 /* Task_Manager.xcdatamodeld in Sources */,
 				546E8311291F328B00DB556E /* Pages.swift in Sources */,
+				54ADDFBA2929F83000A1CAC3 /* Persistence.swift in Sources */,
 				546E8305291F2E9D00DB556E /* ContentView.swift in Sources */,
 				546E8303291F2E9D00DB556E /* SwiftExerciseApp.swift in Sources */,
 				546E8318291F3AAF00DB556E /* StudentViewModel.swift in Sources */,
 				546E8316291F396700DB556E /* Model.swift in Sources */,
+				54ADDFC1292A023800A1CAC3 /* TaskViewModel.swift in Sources */,
+				54ADDFC5292A771100A1CAC3 /* DynamicFilteredView.swift in Sources */,
 				546E831E291F40CC00DB556E /* StudentDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +486,19 @@
 			productName = SocketIO;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		54ADDFBB2929F85500A1CAC3 /* Task_Manager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54ADDFBC2929F85500A1CAC3 /* Task_Manager.xcdatamodel */,
+			);
+			currentVersion = 54ADDFBC2929F85500A1CAC3 /* Task_Manager.xcdatamodel */;
+			path = Task_Manager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 546E82F7291F2E9D00DB556E /* Project object */;
 }

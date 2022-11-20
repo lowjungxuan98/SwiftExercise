@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
 //    let page = pages
+    let persistenceController = PersistenceController.shared
     @State var showModal = false
     var body: some View {
+//        NavigationView {
+//            TaskManagerView()
+//                .navigationTitle("Task Manager")
+//                .navigationBarTitleDisplayMode(.inline)
+//        }
         NavigationView {
             List {
                 ForEach(Pages.allCases, id: \.self) { page in
@@ -24,6 +30,12 @@ struct ContentView: View {
                             AnimatedStickyHeaderMainView()
                         case .parallaxCardEffect:
                             ParallaxCardEffect()
+                        case .core_data:
+                            TaskManagerView()
+                                .navigationTitle("Task Manager")
+                                .navigationBarTitleDisplayMode(.inline)
+                                .environmentObject(TaskViewModel())
+                                .environment(\.managedObjectContext, persistenceController.container.viewContext)
                         }
                     } label: {
                         Text(page.label)

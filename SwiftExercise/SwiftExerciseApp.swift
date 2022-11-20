@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct SwiftExerciseApp: App {
     @StateObject var viewModel = StudentViewModel()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
