@@ -32,10 +32,12 @@ struct ContentView: View {
                             ParallaxCardEffect()
                         case .core_data:
                             TaskManagerView()
-                                .navigationTitle("Task Manager")
+                                .navigationTitle(page.label)
                                 .navigationBarTitleDisplayMode(.inline)
                                 .environmentObject(TaskViewModel())
                                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                        case .task_management_ui:
+                            TaskManagementUIView()
                         }
                     } label: {
                         Text(page.label)

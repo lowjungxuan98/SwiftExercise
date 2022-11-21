@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54478E88292B997600AD82CE /* TaskManagementUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54478E87292B997600AD82CE /* TaskManagementUIView.swift */; };
+		54478E8C292B9AB800AD82CE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54478E8B292B9AB800AD82CE /* Task.swift */; };
+		54478E8F292B9B2600AD82CE /* TaskUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54478E8E292B9B2600AD82CE /* TaskUIViewModel.swift */; };
 		54634E91292938F500A34B14 /* ParallaxCardEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54634E90292938F500A34B14 /* ParallaxCardEffect.swift */; };
 		546AC5F829290C180067EAEE /* AnimatedStickyHeaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AC5F729290C180067EAEE /* AnimatedStickyHeaderMainView.swift */; };
 		546E8303291F2E9D00DB556E /* SwiftExerciseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8302291F2E9D00DB556E /* SwiftExerciseApp.swift */; };
@@ -30,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54478E87292B997600AD82CE /* TaskManagementUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagementUIView.swift; sourceTree = "<group>"; };
+		54478E8B292B9AB800AD82CE /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		54478E8E292B9B2600AD82CE /* TaskUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUIViewModel.swift; sourceTree = "<group>"; };
 		54634E90292938F500A34B14 /* ParallaxCardEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCardEffect.swift; sourceTree = "<group>"; };
 		546AC5F729290C180067EAEE /* AnimatedStickyHeaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedStickyHeaderMainView.swift; sourceTree = "<group>"; };
 		546E82FF291F2E9D00DB556E /* SwiftExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +71,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54478E86292B994E00AD82CE /* Task Management App UI */ = {
+			isa = PBXGroup;
+			children = (
+				54478E8D292B9B1800AD82CE /* ViewModel */,
+				54478E8A292B9AAC00AD82CE /* Model */,
+				54478E89292B9AA800AD82CE /* View */,
+			);
+			path = "Task Management App UI";
+			sourceTree = "<group>";
+		};
+		54478E89292B9AA800AD82CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54478E87292B997600AD82CE /* TaskManagementUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54478E8A292B9AAC00AD82CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54478E8B292B9AB800AD82CE /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54478E8D292B9B1800AD82CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54478E8E292B9B2600AD82CE /* TaskUIViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		54634E8D2929386E00A34B14 /* 3D Parallax Card Effect */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +140,7 @@
 		546E8301291F2E9D00DB556E /* SwiftExercise */ = {
 			isa = PBXGroup;
 			children = (
+				54478E86292B994E00AD82CE /* Task Management App UI */,
 				54ADDFB62929F6F200A1CAC3 /* Core Data */,
 				54634E8D2929386E00A34B14 /* 3D Parallax Card Effect */,
 				546AC5F629290BEA0067EAEE /* Animated Sticky Header */,
@@ -252,13 +293,16 @@
 				54ADDFC3292A0BAB00A1CAC3 /* AddNewTask.swift in Sources */,
 				54ADDFB82929F70D00A1CAC3 /* TaskManagerView.swift in Sources */,
 				546E8345291F9ADB00DB556E /* SocketService.swift in Sources */,
+				54478E88292B997600AD82CE /* TaskManagementUIView.swift in Sources */,
 				546E831C291F3E5900DB556E /* StudentListView.swift in Sources */,
 				54634E91292938F500A34B14 /* ParallaxCardEffect.swift in Sources */,
+				54478E8C292B9AB800AD82CE /* Task.swift in Sources */,
 				546E8343291F9A6000DB556E /* SocketIOView.swift in Sources */,
 				54ADDFBD2929F85500A1CAC3 /* Task_Manager.xcdatamodeld in Sources */,
 				546E8311291F328B00DB556E /* Pages.swift in Sources */,
 				54ADDFBA2929F83000A1CAC3 /* Persistence.swift in Sources */,
 				546E8305291F2E9D00DB556E /* ContentView.swift in Sources */,
+				54478E8F292B9B2600AD82CE /* TaskUIViewModel.swift in Sources */,
 				546E8303291F2E9D00DB556E /* SwiftExerciseApp.swift in Sources */,
 				546E8318291F3AAF00DB556E /* StudentViewModel.swift in Sources */,
 				546E8316291F396700DB556E /* Model.swift in Sources */,
