@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
 //    let page = pages
-    let persistenceController = PersistenceController.shared
     @State var showModal = false
     var body: some View {
 //        NavigationView {
@@ -35,9 +34,8 @@ struct ContentView: View {
                                 .navigationTitle(page.label)
                                 .navigationBarTitleDisplayMode(.inline)
                                 .environmentObject(TaskViewModel())
-                                .environment(\.managedObjectContext, persistenceController.container.viewContext)
                         case .task_management_ui:
-                            TaskManagementUIView()
+                            Task2View()
                         }
                     } label: {
                         Text(page.label)

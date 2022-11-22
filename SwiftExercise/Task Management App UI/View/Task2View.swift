@@ -7,9 +7,12 @@
 
 import SwiftUI
 
-struct TaskManagementUIView: View {
-    @StateObject var taskModel: TaskUIViewModel = .init()
+struct Task2View: View {
+    @StateObject var taskModel: Task2ViewModel = .init()
     @Namespace var animation
+    // MARK: Core Data Context
+    @Environment(\.managedObjectContext) var context
+    @Environment(\.editMode) var editButton
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             // MARK: Laszy Stack with pinned header
@@ -67,6 +70,30 @@ struct TaskManagementUIView: View {
             }
         }
         .ignoresSafeArea(.container, edges: .top)
+
+        // MARK: Add button
+
+        .overlay(
+            Button(
+                action: {
+                    taskModel.addNewTask.toggle()
+                },
+                label: {
+                    Image(systemName: "plus")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.black, in: Circle())
+                })
+            .padding(),
+            alignment: .bottomTrailing)
+     
+        .sheet(isPresented: $taskModel.addNewTask) {
+            taskModel.editTask = nil
+        } content: {
+            Task2Add()
+                .environmentObject(taskModel)
+        }
+
     }
 
     // MARK: Tasks View
@@ -74,106 +101,103 @@ struct TaskManagementUIView: View {
     @ViewBuilder
     func TasksView()->some View {
         LazyVStack(spacing: 20) {
-            if let tasks = taskModel.filteredTasks {
-                if tasks.isEmpty {
-                    Text("No tasks found!!!")
-                        .font(.system(size: 16))
-                        .fontWeight(.light)
-                        .offset(y: 100)
-                } else {
-                    ForEach(tasks) {
-                        TaskCardView($0)
-                    }
-                }
-            } else {
-                // MARK: Progress View
-
-                ProgressView()
-                    .offset(y: 100)
+            Task2Filter(dateToFilter: taskModel.currentDay) { (object: Task2) in
+                TaskCardView(object)
             }
         }
         .padding()
         .padding(.top)
-
-        // MARK: Updating tasks
-
-        .onChange(of: self.taskModel.currentDay) { _ in
-            taskModel.filterTodayTasks()
-        }
     }
 
     // MARK: Task Card View
 
     @ViewBuilder
-    func TaskCardView(_ task: TaskUI)->some View {
-        HStack(alignment: .top, spacing: 30) {
-            VStack(spacing: 10) {
-                Circle()
-                    .fill(taskModel.isCurrentHour(task.taskDate) ? .black : .clear)
-                    .frame(width: 15, height: 15)
-                    .background {
-                        Circle()
-                            .stroke(.black, lineWidth: 1)
-                            .padding(-3)
+    func TaskCardView(_ task: Task2)->some View {
+        HStack(alignment: editButton?.wrappedValue == .active ? .center : .top, spacing: 30) {
+            if editButton?.wrappedValue == .active {
+                VStack(spacing: 10) {
+                    if task.taskDate?.compare(Date()) == .orderedDescending || Calendar.current.isDateInToday(task.taskDate ?? Date()) {
+                        Button {
+                            taskModel.addNewTask.toggle()
+                            taskModel.editTask = task
+                        } label: {
+                            Image(systemName: "pencil.circle.fill")
+                                .font(.title)
+                                .foregroundColor(.primary)
+                        }
                     }
-                    .scaleEffect(!taskModel.isCurrentHour(task.taskDate) ? 0.8 : 1)
-                Rectangle()
-                    .fill(.black)
-                    .frame(width: 3)
-            }
+                    Button {
+                        context.delete(task)
+                        try? context.save()
+                    } label: {
+                        Image(systemName: "minus.circle.fill")
+                            .font(.title)
+                            .foregroundColor(.red)
+                    }
+                }
+            }else{
+                VStack(spacing: 10) {
+                    Circle()
+                        .fill(taskModel.isCurrentHour(task.taskDate ?? Date()) ? (task.isCompleted ? .green : .black) : .clear)
+                        .frame(width: 15, height: 15)
+                        .background {
+                            Circle()
+                                .stroke(.black, lineWidth: 1)
+                                .padding(-3)
+                        }
+                        .scaleEffect(!taskModel.isCurrentHour(task.taskDate ?? Date()) ? 0.8 : 1)
+                    Rectangle()
+                        .fill(.black)
+                        .frame(width: 3)
+                }
 
+            }
             VStack {
                 HStack(alignment: .top, spacing: 10) {
                     VStack(alignment: .leading, spacing: 12) {
-                        Text(task.taskTitle)
+                        Text(task.taskTitle ?? "")
                             .font(.title2.bold())
-                        Text(task.taskDescription)
+                        Text(task.taskDescription ?? "")
                             .font(.callout)
                             .foregroundStyle(.secondary)
                     }
                     .hLeading()
-                    Text(task.taskDate.formatted(date: .omitted, time: .shortened))
+                    Text(task.taskDate?.formatted(date: .omitted, time: .shortened) ?? "")
                 }
 
-                if taskModel.isCurrentHour(task.taskDate) {
+                if taskModel.isCurrentHour(task.taskDate ?? Date()) {
                     // MARK: Team Members
 
-                    HStack(spacing: 0) {
-                        HStack(spacing: -10) {
-                            ForEach(["User1", "User2", "User3"], id: \.self) { user in
-                                Image(user)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 45, height: 45)
-                                    .clipShape(Circle())
-                                    .background {
-                                        Circle()
-                                            .stroke(.black, lineWidth: 5)
-                                    }
+                    HStack(spacing: 12) {
+                       // MARK: Check Button
+                        if !task.isCompleted{
+                            Button {
+                                task.isCompleted = true
+                                try? context.save()
+                            } label: {
+                                Image(systemName: "checkmark")
+                                    .foregroundStyle(.black)
+                                    .padding(10)
+                                    .background(Color.white, in: RoundedRectangle(cornerRadius: 10))
                             }
                         }
-                        .hLeading()
-
-                        // MARK: Check Button
-
-                        Button {} label: {
-                            Image(systemName: "checkmark")
-                                .foregroundStyle(.black)
-                                .padding(10)
-                                .background(Color.white, in: RoundedRectangle(cornerRadius: 10))
-                        }
+                        
+                        Text(task.isCompleted ? "Marked as Completed" : "Mark Task as Completed")
+                            .font(.system(size: task.isCompleted ? 14 : 16,weight: .light))
+                            .foregroundColor(task.isCompleted ? .gray : .white)
+                            .hLeading()
                     }
                     .padding(.top)
                 }
             }
-            .foregroundColor(taskModel.isCurrentHour(task.taskDate) ? .white : .black)
-            .padding(taskModel.isCurrentHour(task.taskDate) ? 15 : 0)
-            .padding(.bottom, taskModel.isCurrentHour(task.taskDate) ? 0 : 10)
+            .foregroundColor(taskModel.isCurrentHour(task.taskDate ?? Date()) ? .white : .black)
+            .padding(taskModel.isCurrentHour(task.taskDate ?? Date()) ? 15 : 0)
+            .padding(.bottom, taskModel.isCurrentHour(task.taskDate ?? Date()) ? 0 : 10)
             .hLeading()
             .background {
                 Color("Black")
                     .cornerRadius(25)
-                    .opacity(taskModel.isCurrentHour(task.taskDate) ? 1 : 0)
+                    .opacity(taskModel.isCurrentHour(task.taskDate ?? Date()) ? 1 : 0)
             }
         }
         .hLeading()
@@ -191,13 +215,7 @@ struct TaskManagementUIView: View {
                     .font(.largeTitle.bold())
             }
             .hLeading()
-            Button {} label: {
-                Image("profile")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 45, height: 45)
-                    .clipShape(Circle())
-            }
+            EditButton()
         }
         .padding()
         .padding(.top, getSafeArea().top)
@@ -205,9 +223,9 @@ struct TaskManagementUIView: View {
     }
 }
 
-struct TaskManagementUIView_Previews: PreviewProvider {
+struct Task2View_Previews: PreviewProvider {
     static var previews: some View {
-        TaskManagementUIView()
+        Task2View()
     }
 }
 
