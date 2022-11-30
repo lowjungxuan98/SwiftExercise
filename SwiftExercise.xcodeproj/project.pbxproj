@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5409DAF72930FD4A0065163C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5409DAF62930FD4A0065163C /* WidgetKit.framework */; };
+		5409DAF92930FD4A0065163C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5409DAF82930FD4A0065163C /* SwiftUI.framework */; };
+		5409DAFC2930FD4A0065163C /* CryptoWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5409DAFB2930FD4A0065163C /* CryptoWidgetBundle.swift */; };
+		5409DAFE2930FD4A0065163C /* CryptoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5409DAFD2930FD4A0065163C /* CryptoWidget.swift */; };
+		5409DB002930FD4C0065163C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5409DAFF2930FD4C0065163C /* Assets.xcassets */; };
+		5409DB042930FD4C0065163C /* CryptoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5409DAF42930FD4A0065163C /* CryptoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		543F78F02931C40A008FABF8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F78EF2931C40A008FABF8 /* Home.swift */; };
+		543F78F22931C486008FABF8 /* FlightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F78F12931C486008FABF8 /* FlightApp.swift */; };
+		543F78F52934BA7E008FABF8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F78F42934BA7E008FABF8 /* Card.swift */; };
+		543F78F7293590D2008FABF8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F78F6293590D2008FABF8 /* DetailView.swift */; };
+		543F78F9293590FD008FABF8 /* FlightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F78F8293590FD008FABF8 /* FlightDetailView.swift */; };
 		54478E88292B997600AD82CE /* Task2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54478E87292B997600AD82CE /* Task2View.swift */; };
 		54478E8F292B9B2600AD82CE /* Task2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54478E8E292B9B2600AD82CE /* Task2ViewModel.swift */; };
 		54478E95292C4B7300AD82CE /* Task2Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54478E94292C4B7300AD82CE /* Task2Filter.swift */; };
@@ -31,9 +42,46 @@
 		54ADDFC1292A023800A1CAC3 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFC0292A023800A1CAC3 /* TaskViewModel.swift */; };
 		54ADDFC3292A0BAB00A1CAC3 /* AddNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFC2292A0BAB00A1CAC3 /* AddNewTask.swift */; };
 		54ADDFC5292A771100A1CAC3 /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFC4292A771100A1CAC3 /* DynamicFilteredView.swift */; };
+		54CE2F5D29377E1B00CF5DA0 /* MagnificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2F5C29377E1B00CF5DA0 /* MagnificationApp.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5409DB022930FD4C0065163C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 546E82F7291F2E9D00DB556E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5409DAF32930FD4A0065163C;
+			remoteInfo = CryptoWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5409DB052930FD4C0065163C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5409DB042930FD4C0065163C /* CryptoWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5409DAF42930FD4A0065163C /* CryptoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CryptoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5409DAF62930FD4A0065163C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5409DAF82930FD4A0065163C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5409DAFB2930FD4A0065163C /* CryptoWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWidgetBundle.swift; sourceTree = "<group>"; };
+		5409DAFD2930FD4A0065163C /* CryptoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWidget.swift; sourceTree = "<group>"; };
+		5409DAFF2930FD4C0065163C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5409DB012930FD4C0065163C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		543F78EF2931C40A008FABF8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		543F78F12931C486008FABF8 /* FlightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightApp.swift; sourceTree = "<group>"; };
+		543F78F42934BA7E008FABF8 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		543F78F6293590D2008FABF8 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		543F78F8293590FD008FABF8 /* FlightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailView.swift; sourceTree = "<group>"; };
 		54478E87292B997600AD82CE /* Task2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task2View.swift; sourceTree = "<group>"; };
 		54478E8E292B9B2600AD82CE /* Task2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task2ViewModel.swift; sourceTree = "<group>"; };
 		54478E94292C4B7300AD82CE /* Task2Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task2Filter.swift; sourceTree = "<group>"; };
@@ -59,9 +107,19 @@
 		54ADDFC0292A023800A1CAC3 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		54ADDFC2292A0BAB00A1CAC3 /* AddNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTask.swift; sourceTree = "<group>"; };
 		54ADDFC4292A771100A1CAC3 /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
+		54CE2F5C29377E1B00CF5DA0 /* MagnificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5409DAF12930FD4A0065163C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5409DAF92930FD4A0065163C /* SwiftUI.framework in Frameworks */,
+				5409DAF72930FD4A0065163C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		546E82FC291F2E9D00DB556E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,6 +131,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5409DAF52930FD4A0065163C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5409DAF62930FD4A0065163C /* WidgetKit.framework */,
+				5409DAF82930FD4A0065163C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5409DAFA2930FD4A0065163C /* CryptoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5409DAFB2930FD4A0065163C /* CryptoWidgetBundle.swift */,
+				5409DAFD2930FD4A0065163C /* CryptoWidget.swift */,
+				5409DAFF2930FD4C0065163C /* Assets.xcassets */,
+				5409DB012930FD4C0065163C /* Info.plist */,
+			);
+			path = CryptoWidget;
+			sourceTree = "<group>";
+		};
+		543F78EB2931C389008FABF8 /* Flight App */ = {
+			isa = PBXGroup;
+			children = (
+				543F78F32934BA70008FABF8 /* Model */,
+				543F78EC2931C3EA008FABF8 /* view */,
+				543F78F12931C486008FABF8 /* FlightApp.swift */,
+			);
+			path = "Flight App";
+			sourceTree = "<group>";
+		};
+		543F78EC2931C3EA008FABF8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				543F78EF2931C40A008FABF8 /* Home.swift */,
+				543F78F6293590D2008FABF8 /* DetailView.swift */,
+				543F78F8293590FD008FABF8 /* FlightDetailView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		543F78F32934BA70008FABF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				543F78F42934BA7E008FABF8 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		54478E86292B994E00AD82CE /* Task Management App UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				546E8301291F2E9D00DB556E /* SwiftExercise */,
+				5409DAFA2930FD4A0065163C /* CryptoWidget */,
+				5409DAF52930FD4A0065163C /* Frameworks */,
 				546E8300291F2E9D00DB556E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				546E82FF291F2E9D00DB556E /* SwiftExercise.app */,
+				5409DAF42930FD4A0065163C /* CryptoWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +244,8 @@
 		546E8301291F2E9D00DB556E /* SwiftExercise */ = {
 			isa = PBXGroup;
 			children = (
+				54CE2F5B29377DFB00CF5DA0 /* Magnification App */,
+				543F78EB2931C389008FABF8 /* Flight App */,
 				54478E86292B994E00AD82CE /* Task Management App UI */,
 				54ADDFB62929F6F200A1CAC3 /* Core Data */,
 				54634E8D2929386E00A34B14 /* 3D Parallax Card Effect */,
@@ -208,9 +319,34 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		54CE2F5B29377DFB00CF5DA0 /* Magnification App */ = {
+			isa = PBXGroup;
+			children = (
+				54CE2F5C29377E1B00CF5DA0 /* MagnificationApp.swift */,
+			);
+			path = "Magnification App";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5409DAF32930FD4A0065163C /* CryptoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5409DB082930FD4C0065163C /* Build configuration list for PBXNativeTarget "CryptoWidgetExtension" */;
+			buildPhases = (
+				5409DAF02930FD4A0065163C /* Sources */,
+				5409DAF12930FD4A0065163C /* Frameworks */,
+				5409DAF22930FD4A0065163C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoWidgetExtension;
+			productName = CryptoWidgetExtension;
+			productReference = 5409DAF42930FD4A0065163C /* CryptoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		546E82FE291F2E9D00DB556E /* SwiftExercise */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546E830D291F2E9F00DB556E /* Build configuration list for PBXNativeTarget "SwiftExercise" */;
@@ -218,10 +354,12 @@
 				546E82FB291F2E9D00DB556E /* Sources */,
 				546E82FC291F2E9D00DB556E /* Frameworks */,
 				546E82FD291F2E9D00DB556E /* Resources */,
+				5409DB052930FD4C0065163C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5409DB032930FD4C0065163C /* PBXTargetDependency */,
 			);
 			name = SwiftExercise;
 			packageProductDependencies = (
@@ -241,6 +379,9 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					5409DAF32930FD4A0065163C = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					546E82FE291F2E9D00DB556E = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -263,11 +404,20 @@
 			projectRoot = "";
 			targets = (
 				546E82FE291F2E9D00DB556E /* SwiftExercise */,
+				5409DAF32930FD4A0065163C /* CryptoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5409DAF22930FD4A0065163C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5409DB002930FD4C0065163C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		546E82FD291F2E9D00DB556E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +430,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5409DAF02930FD4A0065163C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5409DAFE2930FD4A0065163C /* CryptoWidget.swift in Sources */,
+				5409DAFC2930FD4A0065163C /* CryptoWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		546E82FB291F2E9D00DB556E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,10 +446,13 @@
 				546AC5F829290C180067EAEE /* AnimatedStickyHeaderMainView.swift in Sources */,
 				54ADDFC3292A0BAB00A1CAC3 /* AddNewTask.swift in Sources */,
 				54ADDFB82929F70D00A1CAC3 /* TaskManagerView.swift in Sources */,
+				54CE2F5D29377E1B00CF5DA0 /* MagnificationApp.swift in Sources */,
 				546E8345291F9ADB00DB556E /* SocketService.swift in Sources */,
 				54478E88292B997600AD82CE /* Task2View.swift in Sources */,
 				546E831C291F3E5900DB556E /* StudentListView.swift in Sources */,
 				54634E91292938F500A34B14 /* ParallaxCardEffect.swift in Sources */,
+				543F78F52934BA7E008FABF8 /* Card.swift in Sources */,
+				543F78F7293590D2008FABF8 /* DetailView.swift in Sources */,
 				546E8343291F9A6000DB556E /* SocketIOView.swift in Sources */,
 				54ADDFBD2929F85500A1CAC3 /* Task_Manager.xcdatamodeld in Sources */,
 				54478E97292C52D600AD82CE /* Task2Add.swift in Sources */,
@@ -298,6 +460,9 @@
 				54ADDFBA2929F83000A1CAC3 /* Persistence.swift in Sources */,
 				546E8305291F2E9D00DB556E /* ContentView.swift in Sources */,
 				54478E8F292B9B2600AD82CE /* Task2ViewModel.swift in Sources */,
+				543F78F02931C40A008FABF8 /* Home.swift in Sources */,
+				543F78F9293590FD008FABF8 /* FlightDetailView.swift in Sources */,
+				543F78F22931C486008FABF8 /* FlightApp.swift in Sources */,
 				54478E95292C4B7300AD82CE /* Task2Filter.swift in Sources */,
 				546E8303291F2E9D00DB556E /* SwiftExerciseApp.swift in Sources */,
 				546E8318291F3AAF00DB556E /* StudentViewModel.swift in Sources */,
@@ -310,7 +475,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5409DB032930FD4C0065163C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5409DAF32930FD4A0065163C /* CryptoWidgetExtension */;
+			targetProxy = 5409DB022930FD4C0065163C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5409DB062930FD4C0065163C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GB3FK5KD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowjungxuan.SwiftExercise.CryptoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5409DB072930FD4C0065163C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GB3FK5KD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowjungxuan.SwiftExercise.CryptoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		546E830B291F2E9F00DB556E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -428,6 +655,7 @@
 		546E830E291F2E9F00DB556E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +686,7 @@
 		546E830F291F2E9F00DB556E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +717,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5409DB082930FD4C0065163C /* Build configuration list for PBXNativeTarget "CryptoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5409DB062930FD4C0065163C /* Debug */,
+				5409DB072930FD4C0065163C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		546E82FA291F2E9D00DB556E /* Build configuration list for PBXProject "SwiftExercise" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

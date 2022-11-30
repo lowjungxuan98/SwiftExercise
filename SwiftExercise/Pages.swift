@@ -15,6 +15,8 @@ enum Pages: Int, CaseIterable, Identifiable {
     case parallaxCardEffect
     case core_data
     case task_management_ui
+    case flight_app
+    case magnification_app
 
     var id: Int { return rawValue }
 
@@ -32,6 +34,10 @@ enum Pages: Int, CaseIterable, Identifiable {
             return "Task Manager (Core Data)"
         case .task_management_ui:
             return "Task Management App UI"
+        case .flight_app:
+            return "Flight App"
+        case .magnification_app:
+            return "Magnification App"
         }
     }
 }

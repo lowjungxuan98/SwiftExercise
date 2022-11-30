@@ -36,6 +36,10 @@ struct ContentView: View {
                                 .environmentObject(TaskViewModel())
                         case .task_management_ui:
                             Task2View()
+                        case .flight_app:
+                            FlightApp()
+                        case .magnification_app:
+                            MagnificationApp()
                         }
                     } label: {
                         Text(page.label)
