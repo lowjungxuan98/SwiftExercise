@@ -253,15 +253,15 @@
 		546E8301291F2E9D00DB556E /* SwiftExercise */ = {
 			isa = PBXGroup;
 			children = (
-				54CE2F5B29377DFB00CF5DA0 /* Magnification App */,
-				543F78EB2931C389008FABF8 /* Flight App */,
-				54478E86292B994E00AD82CE /* Task Management App UI */,
-				54ADDFB62929F6F200A1CAC3 /* Core Data */,
-				54634E8D2929386E00A34B14 /* 3D Parallax Card Effect */,
-				546AC5F629290BEA0067EAEE /* Animated Sticky Header */,
-				546E8341291F9A5000DB556E /* SocketIO */,
 				546E8322291F8D0E00DB556E /* Info.plist */,
 				546E8314291F393400DB556E /* Restful API */,
+				546E8341291F9A5000DB556E /* SocketIO */,
+				546AC5F629290BEA0067EAEE /* Animated Sticky Header */,
+				54634E8D2929386E00A34B14 /* 3D Parallax Card Effect */,
+				54ADDFB62929F6F200A1CAC3 /* Core Data */,
+				54478E86292B994E00AD82CE /* Task Management App UI */,
+				543F78EB2931C389008FABF8 /* Flight App */,
+				54CE2F5B29377DFB00CF5DA0 /* Magnification App */,
 				546E8310291F328B00DB556E /* Pages.swift */,
 				546E8302291F2E9D00DB556E /* SwiftExerciseApp.swift */,
 				546E8304291F2E9D00DB556E /* ContentView.swift */,
