@@ -8,6 +8,7 @@
 import SwiftUI
 
 
+
 // MARK: Detail View UI
 
 struct DetailView: View {
@@ -15,6 +16,7 @@ struct DetailView: View {
 
     var size: CGSize
     var safeArea: EdgeInsets
+    @EnvironmentObject var animator: Animator
     var body: some View {
         VStack {
             VStack(spacing: 0) {
@@ -23,10 +25,12 @@ struct DetailView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 100)
-                    Text("Your Order has submitted")
+
+                    Text("Your order has submitted")
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                         .padding(.top, 10)
+
                     Text("We are waiting for booking confirmation")
                         .font(.caption)
                         .foregroundColor(.white.opacity(0.8))
@@ -40,17 +44,18 @@ struct DetailView: View {
                 }
 
                 HStack {
-                    FlightDetailView(place: "Los Angeles", code: "LAS", timing: "23 Nov, 03:30")
+                    FlightDetailsView(place: "Los Angeles", code: "LAS", timing: "23 NOV, 03:30")
+
                     VStack(spacing: 8) {
                         Image(systemName: "chevron.right")
                             .font(.title2)
-
                         Text("4h 15m")
                     }
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
-                    FlightDetailView(alignment: .trailing, place: "New York", code: "NYC", timing: "23 Nov, 07:15")
+
+                    FlightDetailsView(alignment: .trailing, place: "New York", code: "NYC", timing: "23 NOV, 07:15")
                 }
                 .padding(15)
                 .padding(.bottom, 70)
@@ -63,14 +68,14 @@ struct DetailView: View {
             .padding(.horizontal, 20)
             .padding(.top, safeArea.top + 15)
             .padding([.horizontal, .bottom], 15)
+            .offset(y: animator.showFinalView ? 0 : 300)
             .background {
                 Rectangle()
                     .fill(Color("BlueTop"))
+                    .scaleEffect(animator.showFinalView ? 1 : 0.001, anchor: .top)
                     .padding(.bottom, 80)
             }
-
-            // MARK: Contact Information View
-
+            .clipped()
             GeometryReader { _ in
 
                 // MARK: For smaller device adoption
@@ -81,26 +86,32 @@ struct DetailView: View {
                         ContactInformation()
                     }
                 }
+                .offset(y: animator.showFinalView ? 0 : size.height)
             }
         }
+        .animation(.easeInOut(duration: animator.showFinalView ? 0.7 : 0.3).delay(animator.showFinalView ? 0.7 : 0), value: animator.showFinalView)
     }
 
     @ViewBuilder
     func ContactInformation() -> some View {
         VStack(spacing: 15) {
             HStack {
-                InfoView(title: "Flight", subtitle: "AR580")
+                InfoView(title: "Flight", subtitle: "AR 580")
                 InfoView(title: "Class", subtitle: "Premium")
                 InfoView(title: "Aircraft", subtitle: "B 737-900")
-                InfoView(title: "Possibility", subtitle: "AR580")
+                InfoView(title: "Possibility", subtitle: "AR 580")
             }
             ContactView(name: "Low Jung Xuan", email: "lowjungxuan@gmail.com", profile: "User1")
-            ContactView(name: "Low", email: "ub.bee8@gmail.com", profile: "User2")
+                .padding(.top, 30)
+
+            ContactView(name: "Low Jung Hong", email: "lowjunghong@gmail.com", profile: "User2")
+
             VStack(alignment: .leading, spacing: 4) {
                 Text("Total Price")
                     .font(.caption)
                     .fontWeight(.semibold)
                     .foregroundColor(.gray)
+
                 Text("$1,536.00")
                     .fontWeight(.semibold)
                     .foregroundColor(.black)
@@ -111,7 +122,7 @@ struct DetailView: View {
 
             // MARK: Home Screen Button
 
-            Button {} label: {
+            Button(action: resetAnimationAndView) {
                 Text("Go to Home Screen")
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
@@ -131,6 +142,28 @@ struct DetailView: View {
     }
 
     @ViewBuilder
+    func ContactView(name: String, email: String, profile: String) -> some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(name)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.black)
+
+                Text(email)
+                    .font(.callout)
+                    .foregroundColor(.gray)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            Image(profile)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 45, height: 45)
+                .clipShape(Circle())
+        }
+        .padding(.horizontal, 15)
+    }
+
+    @ViewBuilder
     func InfoView(title: String, subtitle: String) -> some View {
         VStack(alignment: .center, spacing: 4) {
             Text(title)
@@ -146,26 +179,20 @@ struct DetailView: View {
         .frame(maxWidth: .infinity)
     }
 
-    @ViewBuilder
-    func ContactView(name: String, email: String, profile: String) -> some View {
-        HStack {
-            VStack(alignment: .leading, spacing: 4) {
-                Text(name)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.black)
-
-                Text(email)
-                    .font(.callout)
-                    .foregroundColor(.gray)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            Image(profile)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 45, height: 45)
-                .clipShape(Circle())
+    func resetAnimationAndView() {
+        animator.currentPaymentStatus = .started
+        animator.showClouds = false
+        withAnimation(.easeInOut(duration: 0.3)) {
+            animator.showFinalView = false
         }
-        .padding(.horizontal, 15)
+        animator.ringAnimation = [false, false]
+        animator.showLoadingView = false
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            withAnimation(.easeInOut) {
+                animator.startAnimation = false
+            }
+        }
     }
 }
 

@@ -43,6 +43,9 @@
 		54ADDFC3292A0BAB00A1CAC3 /* AddNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFC2292A0BAB00A1CAC3 /* AddNewTask.swift */; };
 		54ADDFC5292A771100A1CAC3 /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFC4292A771100A1CAC3 /* DynamicFilteredView.swift */; };
 		54CE2F5D29377E1B00CF5DA0 /* MagnificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2F5C29377E1B00CF5DA0 /* MagnificationApp.swift */; };
+		54FA1E182938D10800377B05 /* PaymentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FA1E172938D10800377B05 /* PaymentStatus.swift */; };
+		54FA1E1A2938D24300377B05 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FA1E192938D24300377B05 /* Animator.swift */; };
+		54FA1E1C2938D25100377B05 /* CloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FA1E1B2938D25100377B05 /* CloudView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,9 @@
 		54ADDFC2292A0BAB00A1CAC3 /* AddNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTask.swift; sourceTree = "<group>"; };
 		54ADDFC4292A771100A1CAC3 /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
 		54CE2F5C29377E1B00CF5DA0 /* MagnificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationApp.swift; sourceTree = "<group>"; };
+		54FA1E172938D10800377B05 /* PaymentStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentStatus.swift; sourceTree = "<group>"; };
+		54FA1E192938D24300377B05 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		54FA1E1B2938D25100377B05 /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,8 @@
 				543F78EF2931C40A008FABF8 /* Home.swift */,
 				543F78F6293590D2008FABF8 /* DetailView.swift */,
 				543F78F8293590FD008FABF8 /* FlightDetailView.swift */,
+				54FA1E192938D24300377B05 /* Animator.swift */,
+				54FA1E1B2938D25100377B05 /* CloudView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -175,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				543F78F42934BA7E008FABF8 /* Card.swift */,
+				54FA1E172938D10800377B05 /* PaymentStatus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -449,9 +458,11 @@
 				54CE2F5D29377E1B00CF5DA0 /* MagnificationApp.swift in Sources */,
 				546E8345291F9ADB00DB556E /* SocketService.swift in Sources */,
 				54478E88292B997600AD82CE /* Task2View.swift in Sources */,
+				54FA1E1A2938D24300377B05 /* Animator.swift in Sources */,
 				546E831C291F3E5900DB556E /* StudentListView.swift in Sources */,
 				54634E91292938F500A34B14 /* ParallaxCardEffect.swift in Sources */,
 				543F78F52934BA7E008FABF8 /* Card.swift in Sources */,
+				54FA1E182938D10800377B05 /* PaymentStatus.swift in Sources */,
 				543F78F7293590D2008FABF8 /* DetailView.swift in Sources */,
 				546E8343291F9A6000DB556E /* SocketIOView.swift in Sources */,
 				54ADDFBD2929F85500A1CAC3 /* Task_Manager.xcdatamodeld in Sources */,
@@ -459,6 +470,7 @@
 				546E8311291F328B00DB556E /* Pages.swift in Sources */,
 				54ADDFBA2929F83000A1CAC3 /* Persistence.swift in Sources */,
 				546E8305291F2E9D00DB556E /* ContentView.swift in Sources */,
+				54FA1E1C2938D25100377B05 /* CloudView.swift in Sources */,
 				54478E8F292B9B2600AD82CE /* Task2ViewModel.swift in Sources */,
 				543F78F02931C40A008FABF8 /* Home.swift in Sources */,
 				543F78F9293590FD008FABF8 /* FlightDetailView.swift in Sources */,

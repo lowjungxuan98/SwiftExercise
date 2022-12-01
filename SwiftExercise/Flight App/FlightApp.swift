@@ -12,8 +12,8 @@ struct FlightApp: View {
         GeometryReader {
             let size = $0.size
             let safeArea = $0.safeAreaInsets
-            Home(size: size, safeArea:safeArea)
-                .ignoresSafeArea(.container,edges: .vertical)
+            Home(size: size, safeArea: safeArea)
+                .ignoresSafeArea(.container, edges: .vertical)
         }
     }
 }

@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct FlightDetailView: View {
+struct FlightDetailsView: View {
     var alignment: HorizontalAlignment = .leading
     var place: String
     var code: String
     var timing: String
+
     var body: some View {
         VStack(alignment: alignment, spacing: 6) {
             Text(place)
@@ -28,8 +29,9 @@ struct FlightDetailView: View {
     }
 }
 
-struct FlightDetailView_Previews: PreviewProvider {
+struct FlightDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FlightApp()
+        FlightDetailsView(place: "Los Angeles", code: "LAS", timing: "23 NOV, 03:30")
+            .previewLayout(.sizeThatFits)
     }
 }
