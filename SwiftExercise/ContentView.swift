@@ -50,6 +50,9 @@ struct ContentView: View {
                                     .navigationBarBackButtonHidden(true)
                             case .stock_app:
                                 StockApp()
+                                    .navigationBarTitleDisplayMode(.inline)
+                                    .navigationBarBackButtonHidden(true)
+                                    .navigationBarHidden(true)
                             }
                         } label: {
                             Text(page.label)

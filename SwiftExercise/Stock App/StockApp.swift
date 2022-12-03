@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct StockApp: View {
+    @StateObject var appVM = AppViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            MainListView()
+        }
+        .environmentObject(appVM)
     }
 }
 

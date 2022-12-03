@@ -63,6 +63,12 @@
 		5483228E293BB9B8000C9FA8 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483228D293BB9B8000C9FA8 /* EmptyStateView.swift */; };
 		54832290293BB9C2000C9FA8 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483228F293BB9C2000C9FA8 /* ErrorStateView.swift */; };
 		54832292293BB9CC000C9FA8 /* LoadingStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832291293BB9CC000C9FA8 /* LoadingStateView.swift */; };
+		54832294293BBACA000C9FA8 /* DateRangePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832293293BBACA000C9FA8 /* DateRangePickerView.swift */; };
+		54832296293BBAD6000C9FA8 /* StockTickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832295293BBAD6000C9FA8 /* StockTickerView.swift */; };
+		54832298293BBAE2000C9FA8 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832297293BBAE2000C9FA8 /* ChartView.swift */; };
+		5483229A293BBB9F000C9FA8 /* TickerListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832299293BBB9F000C9FA8 /* TickerListRowView.swift */; };
+		5483229C293BBBD4000C9FA8 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483229B293BBBD4000C9FA8 /* SearchView.swift */; };
+		5483229E293BBC23000C9FA8 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483229D293BBC23000C9FA8 /* MainListView.swift */; };
 		54ADDFB82929F70D00A1CAC3 /* TaskManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFB72929F70D00A1CAC3 /* TaskManagerView.swift */; };
 		54ADDFBA2929F83000A1CAC3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFB92929F83000A1CAC3 /* Persistence.swift */; };
 		54ADDFBD2929F85500A1CAC3 /* Task_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFBB2929F85500A1CAC3 /* Task_Manager.xcdatamodeld */; };
@@ -157,6 +163,12 @@
 		5483228D293BB9B8000C9FA8 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		5483228F293BB9C2000C9FA8 /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
 		54832291293BB9CC000C9FA8 /* LoadingStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStateView.swift; sourceTree = "<group>"; };
+		54832293293BBACA000C9FA8 /* DateRangePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangePickerView.swift; sourceTree = "<group>"; };
+		54832295293BBAD6000C9FA8 /* StockTickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTickerView.swift; sourceTree = "<group>"; };
+		54832297293BBAE2000C9FA8 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		54832299293BBB9F000C9FA8 /* TickerListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerListRowView.swift; sourceTree = "<group>"; };
+		5483229B293BBBD4000C9FA8 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		5483229D293BBC23000C9FA8 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		54ADDFB72929F70D00A1CAC3 /* TaskManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerView.swift; sourceTree = "<group>"; };
 		54ADDFB92929F83000A1CAC3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		54ADDFBC2929F85500A1CAC3 /* Task_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task_Manager.xcdatamodel; sourceTree = "<group>"; };
@@ -423,6 +435,9 @@
 			children = (
 				5483228C293BB99F000C9FA8 /* Common */,
 				5483226E293BAD3C000C9FA8 /* Stock Ticker Sheet Views */,
+				54832299293BBB9F000C9FA8 /* TickerListRowView.swift */,
+				5483229B293BBBD4000C9FA8 /* SearchView.swift */,
+				5483229D293BBC23000C9FA8 /* MainListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -462,6 +477,9 @@
 			isa = PBXGroup;
 			children = (
 				5483226F293BAD4E000C9FA8 /* QuoteDetailRowColumnItem.swift */,
+				54832293293BBACA000C9FA8 /* DateRangePickerView.swift */,
+				54832295293BBAD6000C9FA8 /* StockTickerView.swift */,
+				54832297293BBAE2000C9FA8 /* ChartView.swift */,
 			);
 			path = "Stock Ticker Sheet Views";
 			sourceTree = "<group>";
@@ -656,6 +674,7 @@
 				54832269293BACA3000C9FA8 /* ChartRange+Extensions.swift in Sources */,
 				54832282293BAF7B000C9FA8 /* QuotesViewModel.swift in Sources */,
 				54832270293BAD4E000C9FA8 /* QuoteDetailRowColumnItem.swift in Sources */,
+				54832294293BBACA000C9FA8 /* DateRangePickerView.swift in Sources */,
 				543F78F7293590D2008FABF8 /* DetailView.swift in Sources */,
 				546E8343291F9A6000DB556E /* SocketIOView.swift in Sources */,
 				54832263293BAC24000C9FA8 /* StocksAPI.swift in Sources */,
@@ -664,13 +683,17 @@
 				54ADDFBD2929F85500A1CAC3 /* Task_Manager.xcdatamodeld in Sources */,
 				54832286293BAF91000C9FA8 /* TickerQuoteViewModel.swift in Sources */,
 				54832280293BAF6F000C9FA8 /* AppViewModel.swift in Sources */,
+				5483229E293BBC23000C9FA8 /* MainListView.swift in Sources */,
 				54478E97292C52D600AD82CE /* Task2Add.swift in Sources */,
 				546E8311291F328B00DB556E /* Pages.swift in Sources */,
+				54832298293BBAE2000C9FA8 /* ChartView.swift in Sources */,
 				54ADDFBA2929F83000A1CAC3 /* Persistence.swift in Sources */,
 				546E8305291F2E9D00DB556E /* ContentView.swift in Sources */,
 				54FA1E1C2938D25100377B05 /* CloudView.swift in Sources */,
 				54478E8F292B9B2600AD82CE /* Task2ViewModel.swift in Sources */,
+				5483229C293BBBD4000C9FA8 /* SearchView.swift in Sources */,
 				543F78F02931C40A008FABF8 /* Home.swift in Sources */,
+				54832296293BBAD6000C9FA8 /* StockTickerView.swift in Sources */,
 				543F78F9293590FD008FABF8 /* FlightDetailView.swift in Sources */,
 				543F78F22931C486008FABF8 /* FlightApp.swift in Sources */,
 				54832250293A2D04000C9FA8 /* Album.swift in Sources */,
@@ -687,6 +710,7 @@
 				54832265293BAC58000C9FA8 /* TickerListRepository.swift in Sources */,
 				5483224D293A2BDB000C9FA8 /* ScrollableHeader.swift in Sources */,
 				546E831E291F40CC00DB556E /* StudentDetailView.swift in Sources */,
+				5483229A293BBB9F000C9FA8 /* TickerListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
