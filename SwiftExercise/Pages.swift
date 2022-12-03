@@ -17,6 +17,7 @@ enum Pages: Int, CaseIterable, Identifiable {
     case task_management_ui
     case flight_app
     case magnification_app
+    case scrollable_header
 
     var id: Int { return rawValue }
 
@@ -38,6 +39,8 @@ enum Pages: Int, CaseIterable, Identifiable {
             return "Flight App"
         case .magnification_app:
             return "Magnification App"
+        case .scrollable_header:
+            return "Scrollable Header"
         }
     }
 }

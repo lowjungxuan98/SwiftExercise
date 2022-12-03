@@ -11,44 +11,48 @@ struct ContentView: View {
 //    let page = pages
     @State var showModal = false
     var body: some View {
-//        NavigationView {
-//            TaskManagerView()
-//                .navigationTitle("Task Manager")
-//                .navigationBarTitleDisplayMode(.inline)
-//        }
-        NavigationView {
-            List {
-                ForEach(Pages.allCases, id: \.self) { page in
-                    NavigationLink {
-                        switch page {
-                        case .restApi:
-                            StudentListView()
-                        case .socketIO:
-                            SocketIOView()
-                        case .animatedStickyHeader:
-                            AnimatedStickyHeaderMainView()
-                        case .parallaxCardEffect:
-                            ParallaxCardEffect()
-                        case .core_data:
-                            TaskManagerView()
-                                .navigationTitle(page.label)
-                                .navigationBarTitleDisplayMode(.inline)
-                                .environmentObject(TaskViewModel())
-                        case .task_management_ui:
-                            Task2View()
-                        case .flight_app:
-                            FlightApp()
-                        case .magnification_app:
-                            MagnificationApp()
+        GeometryReader {
+            let safeArea = $0.safeAreaInsets
+            let size = $0.size
+            NavigationView {
+                List {
+                    ForEach(Pages.allCases, id: \.self) { page in
+                        NavigationLink {
+                            switch page {
+                            case .restApi:
+                                StudentListView()
+                            case .socketIO:
+                                SocketIOView()
+                            case .animatedStickyHeader:
+                                AnimatedStickyHeaderMainView()
+                            case .parallaxCardEffect:
+                                ParallaxCardEffect()
+                            case .core_data:
+                                TaskManagerView()
+                                    .navigationTitle(page.label)
+                                    .navigationBarTitleDisplayMode(.inline)
+                                    .environmentObject(TaskViewModel())
+                            case .task_management_ui:
+                                Task2View()
+                            case .flight_app:
+                                FlightApp()
+                            case .magnification_app:
+                                MagnificationApp()
+                            case .scrollable_header:
+                                ScrollableHeader(safeArea: safeArea, size: size)
+                                    .preferredColorScheme(.dark)
+                                    .ignoresSafeArea(.container, edges: .top)
+                                    .navigationBarBackButtonHidden(true)
+                            }
+                        } label: {
+                            Text(page.label)
                         }
-                    } label: {
-                        Text(page.label)
                     }
                 }
+                .listStyle(.plain)
+                .navigationTitle("Swift Exercise")
+                .navigationBarTitleDisplayMode(.inline)
             }
-            .listStyle(.plain)
-            .navigationTitle("Swift Exercise")
-            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

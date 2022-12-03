@@ -36,6 +36,8 @@
 		546E8321291F89AA00DB556E /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 546E8320291F89AA00DB556E /* SocketIO */; };
 		546E8343291F9A6000DB556E /* SocketIOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8342291F9A6000DB556E /* SocketIOView.swift */; };
 		546E8345291F9ADB00DB556E /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8344291F9ADB00DB556E /* SocketService.swift */; };
+		5483224D293A2BDB000C9FA8 /* ScrollableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483224C293A2BDB000C9FA8 /* ScrollableHeader.swift */; };
+		54832250293A2D04000C9FA8 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483224F293A2D04000C9FA8 /* Album.swift */; };
 		54ADDFB82929F70D00A1CAC3 /* TaskManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFB72929F70D00A1CAC3 /* TaskManagerView.swift */; };
 		54ADDFBA2929F83000A1CAC3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFB92929F83000A1CAC3 /* Persistence.swift */; };
 		54ADDFBD2929F85500A1CAC3 /* Task_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFBB2929F85500A1CAC3 /* Task_Manager.xcdatamodeld */; };
@@ -104,6 +106,8 @@
 		546E8322291F8D0E00DB556E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		546E8342291F9A6000DB556E /* SocketIOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOView.swift; sourceTree = "<group>"; };
 		546E8344291F9ADB00DB556E /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		5483224C293A2BDB000C9FA8 /* ScrollableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableHeader.swift; sourceTree = "<group>"; };
+		5483224F293A2D04000C9FA8 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		54ADDFB72929F70D00A1CAC3 /* TaskManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerView.swift; sourceTree = "<group>"; };
 		54ADDFB92929F83000A1CAC3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		54ADDFBC2929F85500A1CAC3 /* Task_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task_Manager.xcdatamodel; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 		546E8301291F2E9D00DB556E /* SwiftExercise */ = {
 			isa = PBXGroup;
 			children = (
+				5483224B293A2BA7000C9FA8 /* Scrollable Header */,
 				546E8322291F8D0E00DB556E /* Info.plist */,
 				546E8314291F393400DB556E /* Restful API */,
 				546E8341291F9A5000DB556E /* SocketIO */,
@@ -297,6 +302,31 @@
 				546E8344291F9ADB00DB556E /* SocketService.swift */,
 			);
 			path = SocketIO;
+			sourceTree = "<group>";
+		};
+		5483224B293A2BA7000C9FA8 /* Scrollable Header */ = {
+			isa = PBXGroup;
+			children = (
+				54832251293A8E65000C9FA8 /* View */,
+				5483224E293A2C43000C9FA8 /* Model */,
+			);
+			path = "Scrollable Header";
+			sourceTree = "<group>";
+		};
+		5483224E293A2C43000C9FA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5483224F293A2D04000C9FA8 /* Album.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54832251293A8E65000C9FA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5483224C293A2BDB000C9FA8 /* ScrollableHeader.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		54ADDFB62929F6F200A1CAC3 /* Core Data */ = {
@@ -475,12 +505,14 @@
 				543F78F02931C40A008FABF8 /* Home.swift in Sources */,
 				543F78F9293590FD008FABF8 /* FlightDetailView.swift in Sources */,
 				543F78F22931C486008FABF8 /* FlightApp.swift in Sources */,
+				54832250293A2D04000C9FA8 /* Album.swift in Sources */,
 				54478E95292C4B7300AD82CE /* Task2Filter.swift in Sources */,
 				546E8303291F2E9D00DB556E /* SwiftExerciseApp.swift in Sources */,
 				546E8318291F3AAF00DB556E /* StudentViewModel.swift in Sources */,
 				546E8316291F396700DB556E /* Model.swift in Sources */,
 				54ADDFC1292A023800A1CAC3 /* TaskViewModel.swift in Sources */,
 				54ADDFC5292A771100A1CAC3 /* DynamicFilteredView.swift in Sources */,
+				5483224D293A2BDB000C9FA8 /* ScrollableHeader.swift in Sources */,
 				546E831E291F40CC00DB556E /* StudentDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
