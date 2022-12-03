@@ -17,6 +17,15 @@
         "revision" : "df8d82047f6654d8e4b655d1b1525c64e1059d21",
         "version" : "4.0.4"
       }
+    },
+    {
+      "identity" : "stocksapi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lowjungxuan98/StocksAPI.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "54836569468285bb61e3a779a7afcd4ab685dd8e"
+      }
     }
   ],
   "version" : 2

@@ -21,7 +21,7 @@ struct DetailView: View {
         VStack {
             VStack(spacing: 0) {
                 VStack {
-                    Image("Logo")
+                    Image("Logo 1")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 100)

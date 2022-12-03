@@ -11,11 +11,13 @@ import SwiftUI
 struct SwiftExerciseApp: App {
     @StateObject var viewModel = StudentViewModel()
     let persistenceController = PersistenceController.shared
+    @StateObject var appVM = AppViewModel()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(viewModel)
+                .environmentObject(appVM)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

@@ -25,6 +25,7 @@ struct ContentView: View {
                                 SocketIOView()
                             case .animatedStickyHeader:
                                 AnimatedStickyHeaderMainView()
+                                    .navigationBarBackButtonHidden(true)
                             case .parallaxCardEffect:
                                 ParallaxCardEffect()
                             case .core_data:
@@ -32,10 +33,14 @@ struct ContentView: View {
                                     .navigationTitle(page.label)
                                     .navigationBarTitleDisplayMode(.inline)
                                     .environmentObject(TaskViewModel())
+                                    .preferredColorScheme(.light)
                             case .task_management_ui:
                                 Task2View()
+                                    .navigationBarBackButtonHidden(true)
+                                    .preferredColorScheme(.light)
                             case .flight_app:
                                 FlightApp()
+                                    .navigationBarBackButtonHidden(true)
                             case .magnification_app:
                                 MagnificationApp()
                             case .scrollable_header:
@@ -43,6 +48,8 @@ struct ContentView: View {
                                     .preferredColorScheme(.dark)
                                     .ignoresSafeArea(.container, edges: .top)
                                     .navigationBarBackButtonHidden(true)
+                            case .stock_app:
+                                StockApp()
                             }
                         } label: {
                             Text(page.label)

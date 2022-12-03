@@ -10,6 +10,7 @@ import SwiftUI
 struct Task2View: View {
     @StateObject var taskModel: Task2ViewModel = .init()
     @Namespace var animation
+    @Environment(\.dismiss) var dismiss
     // MARK: Core Data Context
     @Environment(\.managedObjectContext) var context
     @Environment(\.editMode) var editButton
@@ -207,7 +208,14 @@ struct Task2View: View {
 
     @ViewBuilder
     func HeaderView()->some View {
-        HStack {
+        HStack(alignment: .top) {
+            Button {
+                dismiss()
+            } label: {
+                Image(systemName: "chevron.left")
+                    .font(.title3)
+                    .foregroundColor(.gray)
+            }
             VStack(alignment: .leading, spacing: 10) {
                 Text(Date().formatted(date: .abbreviated, time: .omitted))
                     .foregroundColor(.gray)

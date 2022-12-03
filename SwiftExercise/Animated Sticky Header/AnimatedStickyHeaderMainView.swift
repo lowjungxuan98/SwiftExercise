@@ -10,6 +10,7 @@ import SwiftUI
 struct AnimatedStickyHeaderMainView: View {
     // MARK: - Header Animation Properties
 
+    @Environment(\.dismiss) var dismiss
     @State var offsetY: CGFloat = 0
     @State var searchText = ""
     @State var showSearchBar = false
@@ -54,6 +55,13 @@ struct AnimatedStickyHeaderMainView: View {
 
         VStack {
             HStack(spacing: 15) {
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .font(.title3)
+                        .foregroundColor(.white)
+                }
                 HStack(spacing: 15) {
                     Image(systemName: "magnifyingglass")
                         .foregroundColor(.white)
@@ -109,14 +117,17 @@ struct AnimatedStickyHeaderMainView: View {
 
             .padding(.horizontal, -progress * 50)
             .padding(.top, 10)
+            .padding(.leading, -progress * 30)
 
             // MARK: - Moving Up when Scrolling Started
 
-            .offset(y: progress * 60)
+            .offset(y: progress * 50)
             .opacity(showSearchBar ? 0 : 1)
         }
 
         // MARK: Displaying Search Button
+
+        .padding(.bottom, 10)
 
         .overlay(alignment: .topLeading, content: {
             Button {
@@ -127,7 +138,7 @@ struct AnimatedStickyHeaderMainView: View {
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
             }
-            .offset(x: 13, y: 7)
+            .offset(x: 43, y: 10)
             .opacity(showSearchBar ? 0 : -progress)
 
         })

@@ -38,6 +38,31 @@
 		546E8345291F9ADB00DB556E /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8344291F9ADB00DB556E /* SocketService.swift */; };
 		5483224D293A2BDB000C9FA8 /* ScrollableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483224C293A2BDB000C9FA8 /* ScrollableHeader.swift */; };
 		54832250293A2D04000C9FA8 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483224F293A2D04000C9FA8 /* Album.swift */; };
+		54832256293B1ECF000C9FA8 /* StockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832255293B1ECF000C9FA8 /* StockApp.swift */; };
+		5483225F293BABF7000C9FA8 /* StocksAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 5483225E293BABF7000C9FA8 /* StocksAPI */; };
+		54832261293BABF7000C9FA8 /* StocksAPIExec in Frameworks */ = {isa = PBXBuildFile; productRef = 54832260293BABF7000C9FA8 /* StocksAPIExec */; };
+		54832263293BAC24000C9FA8 /* StocksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832262293BAC24000C9FA8 /* StocksAPI.swift */; };
+		54832265293BAC58000C9FA8 /* TickerListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832264293BAC58000C9FA8 /* TickerListRepository.swift */; };
+		54832267293BAC93000C9FA8 /* Quote+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832266293BAC93000C9FA8 /* Quote+Extensions.swift */; };
+		54832269293BACA3000C9FA8 /* ChartRange+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832268293BACA3000C9FA8 /* ChartRange+Extensions.swift */; };
+		5483226B293BACB1000C9FA8 /* Foundation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483226A293BACB1000C9FA8 /* Foundation+Extension.swift */; };
+		5483226D293BACFC000C9FA8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483226C293BACFC000C9FA8 /* Utils.swift */; };
+		54832270293BAD4E000C9FA8 /* QuoteDetailRowColumnItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483226F293BAD4E000C9FA8 /* QuoteDetailRowColumnItem.swift */; };
+		54832272293BADB0000C9FA8 /* TickerListRowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832271293BADB0000C9FA8 /* TickerListRowData.swift */; };
+		54832274293BADBF000C9FA8 /* FetchPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832273293BADBF000C9FA8 /* FetchPhase.swift */; };
+		54832276293BADCA000C9FA8 /* ChartViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832275293BADCA000C9FA8 /* ChartViewData.swift */; };
+		54832278293BAE3D000C9FA8 /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832277293BAE3D000C9FA8 /* Stubs.swift */; };
+		5483227A293BAE4B000C9FA8 /* MockStocksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832279293BAE4B000C9FA8 /* MockStocksAPI.swift */; };
+		5483227C293BAE5A000C9FA8 /* MockTickerListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483227B293BAE5A000C9FA8 /* MockTickerListRepository.swift */; };
+		5483227E293BAE67000C9FA8 /* Chart+Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483227D293BAE67000C9FA8 /* Chart+Stubs.swift */; };
+		54832280293BAF6F000C9FA8 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483227F293BAF6F000C9FA8 /* AppViewModel.swift */; };
+		54832282293BAF7B000C9FA8 /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832281293BAF7B000C9FA8 /* QuotesViewModel.swift */; };
+		54832284293BAF85000C9FA8 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832283293BAF85000C9FA8 /* SearchViewModel.swift */; };
+		54832286293BAF91000C9FA8 /* TickerQuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832285293BAF91000C9FA8 /* TickerQuoteViewModel.swift */; };
+		54832288293BAF9E000C9FA8 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832287293BAF9E000C9FA8 /* ChartViewModel.swift */; };
+		5483228E293BB9B8000C9FA8 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483228D293BB9B8000C9FA8 /* EmptyStateView.swift */; };
+		54832290293BB9C2000C9FA8 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483228F293BB9C2000C9FA8 /* ErrorStateView.swift */; };
+		54832292293BB9CC000C9FA8 /* LoadingStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54832291293BB9CC000C9FA8 /* LoadingStateView.swift */; };
 		54ADDFB82929F70D00A1CAC3 /* TaskManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFB72929F70D00A1CAC3 /* TaskManagerView.swift */; };
 		54ADDFBA2929F83000A1CAC3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFB92929F83000A1CAC3 /* Persistence.swift */; };
 		54ADDFBD2929F85500A1CAC3 /* Task_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFBB2929F85500A1CAC3 /* Task_Manager.xcdatamodeld */; };
@@ -108,6 +133,30 @@
 		546E8344291F9ADB00DB556E /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		5483224C293A2BDB000C9FA8 /* ScrollableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableHeader.swift; sourceTree = "<group>"; };
 		5483224F293A2D04000C9FA8 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		54832255293B1ECF000C9FA8 /* StockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockApp.swift; sourceTree = "<group>"; };
+		54832262293BAC24000C9FA8 /* StocksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAPI.swift; sourceTree = "<group>"; };
+		54832264293BAC58000C9FA8 /* TickerListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerListRepository.swift; sourceTree = "<group>"; };
+		54832266293BAC93000C9FA8 /* Quote+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+Extensions.swift"; sourceTree = "<group>"; };
+		54832268293BACA3000C9FA8 /* ChartRange+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChartRange+Extensions.swift"; sourceTree = "<group>"; };
+		5483226A293BACB1000C9FA8 /* Foundation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Extension.swift"; sourceTree = "<group>"; };
+		5483226C293BACFC000C9FA8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5483226F293BAD4E000C9FA8 /* QuoteDetailRowColumnItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailRowColumnItem.swift; sourceTree = "<group>"; };
+		54832271293BADB0000C9FA8 /* TickerListRowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerListRowData.swift; sourceTree = "<group>"; };
+		54832273293BADBF000C9FA8 /* FetchPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhase.swift; sourceTree = "<group>"; };
+		54832275293BADCA000C9FA8 /* ChartViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewData.swift; sourceTree = "<group>"; };
+		54832277293BAE3D000C9FA8 /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		54832279293BAE4B000C9FA8 /* MockStocksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStocksAPI.swift; sourceTree = "<group>"; };
+		5483227B293BAE5A000C9FA8 /* MockTickerListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTickerListRepository.swift; sourceTree = "<group>"; };
+		5483227D293BAE67000C9FA8 /* Chart+Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chart+Stubs.swift"; sourceTree = "<group>"; };
+		5483227F293BAF6F000C9FA8 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		54832281293BAF7B000C9FA8 /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
+		54832283293BAF85000C9FA8 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		54832285293BAF91000C9FA8 /* TickerQuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerQuoteViewModel.swift; sourceTree = "<group>"; };
+		54832287293BAF9E000C9FA8 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		5483228B293BB29D000C9FA8 /* SwiftExercise.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftExercise.entitlements; sourceTree = "<group>"; };
+		5483228D293BB9B8000C9FA8 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		5483228F293BB9C2000C9FA8 /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStateView.swift; sourceTree = "<group>"; };
+		54832291293BB9CC000C9FA8 /* LoadingStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStateView.swift; sourceTree = "<group>"; };
 		54ADDFB72929F70D00A1CAC3 /* TaskManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerView.swift; sourceTree = "<group>"; };
 		54ADDFB92929F83000A1CAC3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		54ADDFBC2929F85500A1CAC3 /* Task_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task_Manager.xcdatamodel; sourceTree = "<group>"; };
@@ -134,6 +183,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54832261293BABF7000C9FA8 /* StocksAPIExec in Frameworks */,
+				5483225F293BABF7000C9FA8 /* StocksAPI in Frameworks */,
 				546E8321291F89AA00DB556E /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +308,9 @@
 		546E8301291F2E9D00DB556E /* SwiftExercise */ = {
 			isa = PBXGroup;
 			children = (
-				5483224B293A2BA7000C9FA8 /* Scrollable Header */,
+				5483228B293BB29D000C9FA8 /* SwiftExercise.entitlements */,
 				546E8322291F8D0E00DB556E /* Info.plist */,
+				54832254293B1EB3000C9FA8 /* Stock App */,
 				546E8314291F393400DB556E /* Restful API */,
 				546E8341291F9A5000DB556E /* SocketIO */,
 				546AC5F629290BEA0067EAEE /* Animated Sticky Header */,
@@ -267,6 +319,7 @@
 				54478E86292B994E00AD82CE /* Task Management App UI */,
 				543F78EB2931C389008FABF8 /* Flight App */,
 				54CE2F5B29377DFB00CF5DA0 /* Magnification App */,
+				5483224B293A2BA7000C9FA8 /* Scrollable Header */,
 				546E8310291F328B00DB556E /* Pages.swift */,
 				546E8302291F2E9D00DB556E /* SwiftExerciseApp.swift */,
 				546E8304291F2E9D00DB556E /* ContentView.swift */,
@@ -327,6 +380,100 @@
 				5483224C293A2BDB000C9FA8 /* ScrollableHeader.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		54832254293B1EB3000C9FA8 /* Stock App */ = {
+			isa = PBXGroup;
+			children = (
+				5483225C293BABBC000C9FA8 /* Services */,
+				5483225B293BABB2000C9FA8 /* Extensions */,
+				5483225A293BABAC000C9FA8 /* View Models */,
+				54832259293BABA2000C9FA8 /* Views */,
+				54832258293BAB9C000C9FA8 /* Models */,
+				54832257293BAB82000C9FA8 /* Mocks & Stubs */,
+				54832255293B1ECF000C9FA8 /* StockApp.swift */,
+				5483226C293BACFC000C9FA8 /* Utils.swift */,
+			);
+			path = "Stock App";
+			sourceTree = "<group>";
+		};
+		54832257293BAB82000C9FA8 /* Mocks & Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				54832277293BAE3D000C9FA8 /* Stubs.swift */,
+				54832279293BAE4B000C9FA8 /* MockStocksAPI.swift */,
+				5483227B293BAE5A000C9FA8 /* MockTickerListRepository.swift */,
+				5483227D293BAE67000C9FA8 /* Chart+Stubs.swift */,
+			);
+			path = "Mocks & Stubs";
+			sourceTree = "<group>";
+		};
+		54832258293BAB9C000C9FA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54832271293BADB0000C9FA8 /* TickerListRowData.swift */,
+				54832273293BADBF000C9FA8 /* FetchPhase.swift */,
+				54832275293BADCA000C9FA8 /* ChartViewData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		54832259293BABA2000C9FA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5483228C293BB99F000C9FA8 /* Common */,
+				5483226E293BAD3C000C9FA8 /* Stock Ticker Sheet Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5483225A293BABAC000C9FA8 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				5483227F293BAF6F000C9FA8 /* AppViewModel.swift */,
+				54832281293BAF7B000C9FA8 /* QuotesViewModel.swift */,
+				54832283293BAF85000C9FA8 /* SearchViewModel.swift */,
+				54832285293BAF91000C9FA8 /* TickerQuoteViewModel.swift */,
+				54832287293BAF9E000C9FA8 /* ChartViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		5483225B293BABB2000C9FA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				54832266293BAC93000C9FA8 /* Quote+Extensions.swift */,
+				54832268293BACA3000C9FA8 /* ChartRange+Extensions.swift */,
+				5483226A293BACB1000C9FA8 /* Foundation+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5483225C293BABBC000C9FA8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				54832262293BAC24000C9FA8 /* StocksAPI.swift */,
+				54832264293BAC58000C9FA8 /* TickerListRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5483226E293BAD3C000C9FA8 /* Stock Ticker Sheet Views */ = {
+			isa = PBXGroup;
+			children = (
+				5483226F293BAD4E000C9FA8 /* QuoteDetailRowColumnItem.swift */,
+			);
+			path = "Stock Ticker Sheet Views";
+			sourceTree = "<group>";
+		};
+		5483228C293BB99F000C9FA8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5483228D293BB9B8000C9FA8 /* EmptyStateView.swift */,
+				5483228F293BB9C2000C9FA8 /* ErrorStateView.swift */,
+				54832291293BB9CC000C9FA8 /* LoadingStateView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		54ADDFB62929F6F200A1CAC3 /* Core Data */ = {
@@ -403,6 +550,8 @@
 			name = SwiftExercise;
 			packageProductDependencies = (
 				546E8320291F89AA00DB556E /* SocketIO */,
+				5483225E293BABF7000C9FA8 /* StocksAPI */,
+				54832260293BABF7000C9FA8 /* StocksAPIExec */,
 			);
 			productName = SwiftExercise;
 			productReference = 546E82FF291F2E9D00DB556E /* SwiftExercise.app */;
@@ -437,6 +586,7 @@
 			mainGroup = 546E82F6291F2E9D00DB556E;
 			packageReferences = (
 				546E831F291F89AA00DB556E /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+				5483225D293BABF7000C9FA8 /* XCRemoteSwiftPackageReference "StocksAPI" */,
 			);
 			productRefGroup = 546E8300291F2E9D00DB556E /* Products */;
 			projectDirPath = "";
@@ -486,16 +636,34 @@
 				54ADDFC3292A0BAB00A1CAC3 /* AddNewTask.swift in Sources */,
 				54ADDFB82929F70D00A1CAC3 /* TaskManagerView.swift in Sources */,
 				54CE2F5D29377E1B00CF5DA0 /* MagnificationApp.swift in Sources */,
+				54832274293BADBF000C9FA8 /* FetchPhase.swift in Sources */,
 				546E8345291F9ADB00DB556E /* SocketService.swift in Sources */,
+				5483226D293BACFC000C9FA8 /* Utils.swift in Sources */,
 				54478E88292B997600AD82CE /* Task2View.swift in Sources */,
+				5483228E293BB9B8000C9FA8 /* EmptyStateView.swift in Sources */,
 				54FA1E1A2938D24300377B05 /* Animator.swift in Sources */,
+				5483227E293BAE67000C9FA8 /* Chart+Stubs.swift in Sources */,
 				546E831C291F3E5900DB556E /* StudentListView.swift in Sources */,
 				54634E91292938F500A34B14 /* ParallaxCardEffect.swift in Sources */,
+				5483227A293BAE4B000C9FA8 /* MockStocksAPI.swift in Sources */,
+				54832276293BADCA000C9FA8 /* ChartViewData.swift in Sources */,
+				54832290293BB9C2000C9FA8 /* ErrorStateView.swift in Sources */,
+				5483227C293BAE5A000C9FA8 /* MockTickerListRepository.swift in Sources */,
 				543F78F52934BA7E008FABF8 /* Card.swift in Sources */,
+				5483226B293BACB1000C9FA8 /* Foundation+Extension.swift in Sources */,
+				54832267293BAC93000C9FA8 /* Quote+Extensions.swift in Sources */,
 				54FA1E182938D10800377B05 /* PaymentStatus.swift in Sources */,
+				54832269293BACA3000C9FA8 /* ChartRange+Extensions.swift in Sources */,
+				54832282293BAF7B000C9FA8 /* QuotesViewModel.swift in Sources */,
+				54832270293BAD4E000C9FA8 /* QuoteDetailRowColumnItem.swift in Sources */,
 				543F78F7293590D2008FABF8 /* DetailView.swift in Sources */,
 				546E8343291F9A6000DB556E /* SocketIOView.swift in Sources */,
+				54832263293BAC24000C9FA8 /* StocksAPI.swift in Sources */,
+				54832288293BAF9E000C9FA8 /* ChartViewModel.swift in Sources */,
+				54832272293BADB0000C9FA8 /* TickerListRowData.swift in Sources */,
 				54ADDFBD2929F85500A1CAC3 /* Task_Manager.xcdatamodeld in Sources */,
+				54832286293BAF91000C9FA8 /* TickerQuoteViewModel.swift in Sources */,
+				54832280293BAF6F000C9FA8 /* AppViewModel.swift in Sources */,
 				54478E97292C52D600AD82CE /* Task2Add.swift in Sources */,
 				546E8311291F328B00DB556E /* Pages.swift in Sources */,
 				54ADDFBA2929F83000A1CAC3 /* Persistence.swift in Sources */,
@@ -509,9 +677,14 @@
 				54478E95292C4B7300AD82CE /* Task2Filter.swift in Sources */,
 				546E8303291F2E9D00DB556E /* SwiftExerciseApp.swift in Sources */,
 				546E8318291F3AAF00DB556E /* StudentViewModel.swift in Sources */,
+				54832256293B1ECF000C9FA8 /* StockApp.swift in Sources */,
 				546E8316291F396700DB556E /* Model.swift in Sources */,
+				54832292293BB9CC000C9FA8 /* LoadingStateView.swift in Sources */,
 				54ADDFC1292A023800A1CAC3 /* TaskViewModel.swift in Sources */,
+				54832278293BAE3D000C9FA8 /* Stubs.swift in Sources */,
 				54ADDFC5292A771100A1CAC3 /* DynamicFilteredView.swift in Sources */,
+				54832284293BAF85000C9FA8 /* SearchViewModel.swift in Sources */,
+				54832265293BAC58000C9FA8 /* TickerListRepository.swift in Sources */,
 				5483224D293A2BDB000C9FA8 /* ScrollableHeader.swift in Sources */,
 				546E831E291F40CC00DB556E /* StudentDetailView.swift in Sources */,
 			);
@@ -702,6 +875,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftExercise/SwiftExercise.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftExercise/Preview Content\"";
@@ -733,6 +907,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftExercise/SwiftExercise.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftExercise/Preview Content\"";
@@ -799,6 +974,14 @@
 				kind = branch;
 			};
 		};
+		5483225D293BABF7000C9FA8 /* XCRemoteSwiftPackageReference "StocksAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lowjungxuan98/StocksAPI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -806,6 +989,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 546E831F291F89AA00DB556E /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
 			productName = SocketIO;
+		};
+		5483225E293BABF7000C9FA8 /* StocksAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5483225D293BABF7000C9FA8 /* XCRemoteSwiftPackageReference "StocksAPI" */;
+			productName = StocksAPI;
+		};
+		54832260293BABF7000C9FA8 /* StocksAPIExec */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5483225D293BABF7000C9FA8 /* XCRemoteSwiftPackageReference "StocksAPI" */;
+			productName = StocksAPIExec;
 		};
 /* End XCSwiftPackageProductDependency section */
 

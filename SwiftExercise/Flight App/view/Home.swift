@@ -12,6 +12,7 @@ struct Home: View {
 
     var size: CGSize
     var safeArea: EdgeInsets
+    @Environment(\.dismiss) var dismiss
 
     // MARK: Gesture Properties
 
@@ -72,6 +73,7 @@ struct Home: View {
                 /// safety check
                 DetailView(size: size, safeArea: safeArea)
                     .environmentObject(animator)
+                    .preferredColorScheme(.light)
             }
 
         })
@@ -91,7 +93,8 @@ struct Home: View {
                         /// Flight Movement  Animation
                         .rotationEffect(.init(degrees: animationStatus ? -10 : 0))
                         .shadow(color: .black.opacity(0.25), radius: 1, x: status == .finished ? -400 : 0, y: status == .finished ? 170 : 0)
-                        .offset(x: planeRect.minX, y: planeRect.minY + 110)
+                        /// the flying plane position
+                        .offset(x: planeRect.minX, y: planeRect.minY + 20)
                         /// Moving Plane a bit down to look like its center when the 3D Animation is Happening
                         .offset(y: animator.startAnimation ? 50 : 0)
                         .scaleEffect(animator.showFinalView ? 0.9 : 1)
@@ -132,11 +135,21 @@ struct Home: View {
     @ViewBuilder
     func HeaderView() -> some View {
         VStack {
-            Image("Logo 1")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: size.width * 0.4)
-                .frame(maxWidth: .infinity, alignment: .leading)
+            HStack {
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .font(.title3)
+                        .foregroundColor(.white)
+                }
+
+                Image("Logo 1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: size.width * 0.4)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
             HStack {
                 FlightDetailsView(place: "Los Angeles", code: "LAS", timing: "23 NOV, 03:30")
 
