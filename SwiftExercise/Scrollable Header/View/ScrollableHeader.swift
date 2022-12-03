@@ -31,7 +31,7 @@ struct ScrollableHeader: View {
                             .padding(.vertical, 12)
                             .background {
                                 Capsule()
-                                    .fill(Color("Green").gradient)
+                                    .fill(Color("Green 1").gradient)
                             }
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)

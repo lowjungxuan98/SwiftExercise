@@ -322,7 +322,6 @@
 			children = (
 				5483228B293BB29D000C9FA8 /* SwiftExercise.entitlements */,
 				546E8322291F8D0E00DB556E /* Info.plist */,
-				54832254293B1EB3000C9FA8 /* Stock App */,
 				546E8314291F393400DB556E /* Restful API */,
 				546E8341291F9A5000DB556E /* SocketIO */,
 				546AC5F629290BEA0067EAEE /* Animated Sticky Header */,
@@ -332,6 +331,7 @@
 				543F78EB2931C389008FABF8 /* Flight App */,
 				54CE2F5B29377DFB00CF5DA0 /* Magnification App */,
 				5483224B293A2BA7000C9FA8 /* Scrollable Header */,
+				54832254293B1EB3000C9FA8 /* Stock App */,
 				546E8310291F328B00DB556E /* Pages.swift */,
 				546E8302291F2E9D00DB556E /* SwiftExerciseApp.swift */,
 				546E8304291F2E9D00DB556E /* ContentView.swift */,
