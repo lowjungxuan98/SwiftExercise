@@ -53,6 +53,9 @@ struct ContentView: View {
                                     .navigationBarTitleDisplayMode(.inline)
                                     .navigationBarBackButtonHidden(true)
                                     .navigationBarHidden(true)
+                            case .social_media_app:
+                                SocialMediaApp()
+                                    .preferredColorScheme(.light)
                             }
                         } label: {
                             Text(page.label)
