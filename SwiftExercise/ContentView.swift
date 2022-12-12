@@ -56,6 +56,8 @@ struct ContentView: View {
                             case .social_media_app:
                                 SocialMediaApp()
                                     .preferredColorScheme(.light)
+                            case .lock_screen_dock:
+                                LockScreenDock()
                             }
                         } label: {
                             Text(page.label)

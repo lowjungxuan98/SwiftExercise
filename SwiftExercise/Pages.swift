@@ -20,6 +20,7 @@ enum Pages: Int, CaseIterable, Identifiable {
     case scrollable_header
     case stock_app
     case social_media_app
+    case lock_screen_dock
     var id: Int { return rawValue }
 
     var label: String {
@@ -46,6 +47,8 @@ enum Pages: Int, CaseIterable, Identifiable {
             return "Stock App"
         case .social_media_app:
             return "Social Media App"
+        case .lock_screen_dock:
+            return "Lock Screen Dock"
         }
     }
 }

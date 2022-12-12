@@ -17,12 +17,16 @@ struct SwiftExerciseApp: App {
     let persistenceController = PersistenceController.shared
     @StateObject var appVM = AppViewModel()
 
+    @Environment(\.openURL) var openURL
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(viewModel)
                 .environmentObject(appVM)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .onOpenURL { url in
+                    openURL(url)
+                }
         }
     }
 }

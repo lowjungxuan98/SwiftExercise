@@ -24,6 +24,19 @@
 		54478E97292C52D600AD82CE /* Task2Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54478E96292C52D600AD82CE /* Task2Add.swift */; };
 		546101792946D23000701D47 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 546101782946D23000701D47 /* GoogleService-Info.plist */; };
 		5461017B2946DAEE00701D47 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461017A2946DAEE00701D47 /* LoadingView.swift */; };
+		5461017E2946F60200701D47 /* LockScreenDock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461017D2946F60200701D47 /* LockScreenDock.swift */; };
+		546101822946F6FD00701D47 /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546101812946F6FD00701D47 /* AppLink.swift */; };
+		546101852946FD5F00701D47 /* LockScreenDockHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546101842946FD5F00701D47 /* LockScreenDockHome.swift */; };
+		5461018B294708E400701D47 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5409DAF62930FD4A0065163C /* WidgetKit.framework */; };
+		5461018C294708E400701D47 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5409DAF82930FD4A0065163C /* SwiftUI.framework */; };
+		5461018F294708E500701D47 /* DockBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461018E294708E500701D47 /* DockBundle.swift */; };
+		54610191294708E500701D47 /* DockLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54610190294708E500701D47 /* DockLiveActivity.swift */; };
+		54610193294708E500701D47 /* Dock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54610192294708E500701D47 /* Dock.swift */; };
+		54610195294708E700701D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54610194294708E700701D47 /* Assets.xcassets */; };
+		54610199294708E700701D47 /* DockExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5461018A294708E400701D47 /* DockExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5461019E29470D3D00701D47 /* DockAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461019D29470D3D00701D47 /* DockAttributes.swift */; };
+		5461019F29470DC000701D47 /* DockAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461019D29470D3D00701D47 /* DockAttributes.swift */; };
+		546101A029470DC300701D47 /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546101812946F6FD00701D47 /* AppLink.swift */; };
 		54634E91292938F500A34B14 /* ParallaxCardEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54634E90292938F500A34B14 /* ParallaxCardEffect.swift */; };
 		546AC5F829290C180067EAEE /* AnimatedStickyHeaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546AC5F729290C180067EAEE /* AnimatedStickyHeaderMainView.swift */; };
 		546E8303291F2E9D00DB556E /* SwiftExerciseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E8302291F2E9D00DB556E /* SwiftExerciseApp.swift */; };
@@ -99,6 +112,13 @@
 			remoteGlobalIDString = 5409DAF32930FD4A0065163C;
 			remoteInfo = CryptoWidgetExtension;
 		};
+		54610197294708E700701D47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 546E82F7291F2E9D00DB556E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54610189294708E400701D47;
+			remoteInfo = DockExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -109,6 +129,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				5409DB042930FD4C0065163C /* CryptoWidgetExtension.appex in Embed Foundation Extensions */,
+				54610199294708E700701D47 /* DockExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +155,16 @@
 		54478E96292C52D600AD82CE /* Task2Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task2Add.swift; sourceTree = "<group>"; };
 		546101782946D23000701D47 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5461017A2946DAEE00701D47 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5461017D2946F60200701D47 /* LockScreenDock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenDock.swift; sourceTree = "<group>"; };
+		546101812946F6FD00701D47 /* AppLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLink.swift; sourceTree = "<group>"; };
+		546101842946FD5F00701D47 /* LockScreenDockHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenDockHome.swift; sourceTree = "<group>"; };
+		5461018A294708E400701D47 /* DockExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DockExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5461018E294708E500701D47 /* DockBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockBundle.swift; sourceTree = "<group>"; };
+		54610190294708E500701D47 /* DockLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockLiveActivity.swift; sourceTree = "<group>"; };
+		54610192294708E500701D47 /* Dock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dock.swift; sourceTree = "<group>"; };
+		54610194294708E700701D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54610196294708E700701D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5461019D29470D3D00701D47 /* DockAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockAttributes.swift; sourceTree = "<group>"; };
 		54634E90292938F500A34B14 /* ParallaxCardEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCardEffect.swift; sourceTree = "<group>"; };
 		546AC5F729290C180067EAEE /* AnimatedStickyHeaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedStickyHeaderMainView.swift; sourceTree = "<group>"; };
 		546E82FF291F2E9D00DB556E /* SwiftExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +235,15 @@
 			files = (
 				5409DAF92930FD4A0065163C /* SwiftUI.framework in Frameworks */,
 				5409DAF72930FD4A0065163C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54610187294708E400701D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5461018C294708E400701D47 /* SwiftUI.framework in Frameworks */,
+				5461018B294708E400701D47 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +342,45 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		5461017C2946F5E300701D47 /* Lock Screen Dock */ = {
+			isa = PBXGroup;
+			children = (
+				546101802946F66200701D47 /* Model */,
+				5461017F2946F65D00701D47 /* View */,
+				5461017D2946F60200701D47 /* LockScreenDock.swift */,
+			);
+			path = "Lock Screen Dock";
+			sourceTree = "<group>";
+		};
+		5461017F2946F65D00701D47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				546101842946FD5F00701D47 /* LockScreenDockHome.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		546101802946F66200701D47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				546101812946F6FD00701D47 /* AppLink.swift */,
+				5461019D29470D3D00701D47 /* DockAttributes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5461018D294708E400701D47 /* Dock */ = {
+			isa = PBXGroup;
+			children = (
+				5461018E294708E500701D47 /* DockBundle.swift */,
+				54610190294708E500701D47 /* DockLiveActivity.swift */,
+				54610192294708E500701D47 /* Dock.swift */,
+				54610194294708E700701D47 /* Assets.xcassets */,
+				54610196294708E700701D47 /* Info.plist */,
+			);
+			path = Dock;
+			sourceTree = "<group>";
+		};
 		54634E8D2929386E00A34B14 /* 3D Parallax Card Effect */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +402,7 @@
 			children = (
 				546E8301291F2E9D00DB556E /* SwiftExercise */,
 				5409DAFA2930FD4A0065163C /* CryptoWidget */,
+				5461018D294708E400701D47 /* Dock */,
 				5409DAF52930FD4A0065163C /* Frameworks */,
 				546E8300291F2E9D00DB556E /* Products */,
 			);
@@ -333,6 +413,7 @@
 			children = (
 				546E82FF291F2E9D00DB556E /* SwiftExercise.app */,
 				5409DAF42930FD4A0065163C /* CryptoWidgetExtension.appex */,
+				5461018A294708E400701D47 /* DockExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -354,6 +435,7 @@
 				5483224B293A2BA7000C9FA8 /* Scrollable Header */,
 				54832254293B1EB3000C9FA8 /* Stock App */,
 				54F15F942942210800277858 /* Social Media App */,
+				5461017C2946F5E300701D47 /* Lock Screen Dock */,
 				546E8310291F328B00DB556E /* Pages.swift */,
 				546E8302291F2E9D00DB556E /* SwiftExerciseApp.swift */,
 				546E8304291F2E9D00DB556E /* ContentView.swift */,
@@ -601,6 +683,23 @@
 			productReference = 5409DAF42930FD4A0065163C /* CryptoWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		54610189294708E400701D47 /* DockExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5461019A294708E700701D47 /* Build configuration list for PBXNativeTarget "DockExtension" */;
+			buildPhases = (
+				54610186294708E400701D47 /* Sources */,
+				54610187294708E400701D47 /* Frameworks */,
+				54610188294708E400701D47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DockExtension;
+			productName = DockExtension;
+			productReference = 5461018A294708E400701D47 /* DockExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		546E82FE291F2E9D00DB556E /* SwiftExercise */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546E830D291F2E9F00DB556E /* Build configuration list for PBXNativeTarget "SwiftExercise" */;
@@ -614,6 +713,7 @@
 			);
 			dependencies = (
 				5409DB032930FD4C0065163C /* PBXTargetDependency */,
+				54610198294708E700701D47 /* PBXTargetDependency */,
 			);
 			name = SwiftExercise;
 			packageProductDependencies = (
@@ -642,6 +742,9 @@
 					5409DAF32930FD4A0065163C = {
 						CreatedOnToolsVersion = 14.1;
 					};
+					54610189294708E400701D47 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					546E82FE291F2E9D00DB556E = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -667,6 +770,7 @@
 			targets = (
 				546E82FE291F2E9D00DB556E /* SwiftExercise */,
 				5409DAF32930FD4A0065163C /* CryptoWidgetExtension */,
+				54610189294708E400701D47 /* DockExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -677,6 +781,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5409DB002930FD4C0065163C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54610188294708E400701D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54610195294708E700701D47 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +814,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54610186294708E400701D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546101A029470DC300701D47 /* AppLink.swift in Sources */,
+				5461018F294708E500701D47 /* DockBundle.swift in Sources */,
+				54610193294708E500701D47 /* Dock.swift in Sources */,
+				54610191294708E500701D47 /* DockLiveActivity.swift in Sources */,
+				5461019F29470DC000701D47 /* DockAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		546E82FB291F2E9D00DB556E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -714,6 +838,7 @@
 				546E8345291F9ADB00DB556E /* SocketService.swift in Sources */,
 				5483226D293BACFC000C9FA8 /* Utils.swift in Sources */,
 				54F15F972942214B00277858 /* SocialMediaApp.swift in Sources */,
+				5461017E2946F60200701D47 /* LockScreenDock.swift in Sources */,
 				54478E88292B997600AD82CE /* Task2View.swift in Sources */,
 				5483228E293BB9B8000C9FA8 /* EmptyStateView.swift in Sources */,
 				54FA1E1A2938D24300377B05 /* Animator.swift in Sources */,
@@ -740,6 +865,7 @@
 				54832288293BAF9E000C9FA8 /* ChartViewModel.swift in Sources */,
 				54832272293BADB0000C9FA8 /* TickerListRowData.swift in Sources */,
 				54ADDFBD2929F85500A1CAC3 /* Task_Manager.xcdatamodeld in Sources */,
+				546101852946FD5F00701D47 /* LockScreenDockHome.swift in Sources */,
 				54832286293BAF91000C9FA8 /* TickerQuoteViewModel.swift in Sources */,
 				54832280293BAF6F000C9FA8 /* AppViewModel.swift in Sources */,
 				5483229E293BBC23000C9FA8 /* MainListView.swift in Sources */,
@@ -751,11 +877,13 @@
 				54FA1E1C2938D25100377B05 /* CloudView.swift in Sources */,
 				54478E8F292B9B2600AD82CE /* Task2ViewModel.swift in Sources */,
 				5483229C293BBBD4000C9FA8 /* SearchView.swift in Sources */,
+				5461019E29470D3D00701D47 /* DockAttributes.swift in Sources */,
 				543F78F02931C40A008FABF8 /* Home.swift in Sources */,
 				54832296293BBAD6000C9FA8 /* StockTickerView.swift in Sources */,
 				5461017B2946DAEE00701D47 /* LoadingView.swift in Sources */,
 				543F78F9293590FD008FABF8 /* FlightDetailView.swift in Sources */,
 				543F78F22931C486008FABF8 /* FlightApp.swift in Sources */,
+				546101822946F6FD00701D47 /* AppLink.swift in Sources */,
 				54832250293A2D04000C9FA8 /* Album.swift in Sources */,
 				54478E95292C4B7300AD82CE /* Task2Filter.swift in Sources */,
 				546E8303291F2E9D00DB556E /* SwiftExerciseApp.swift in Sources */,
@@ -782,6 +910,11 @@
 			isa = PBXTargetDependency;
 			target = 5409DAF32930FD4A0065163C /* CryptoWidgetExtension */;
 			targetProxy = 5409DB022930FD4C0065163C /* PBXContainerItemProxy */;
+		};
+		54610198294708E700701D47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54610189294708E400701D47 /* DockExtension */;
+			targetProxy = 54610197294708E700701D47 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -832,6 +965,60 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lowjungxuan.SwiftExercise.CryptoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5461019B294708E700701D47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GB3FK5KD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dock;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowjungxuan.SwiftExercise.Dock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5461019C294708E700701D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9GB3FK5KD8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dock;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowjungxuan.SwiftExercise.Dock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -968,6 +1155,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftExercise/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1000,6 +1188,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftExercise/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1026,6 +1215,15 @@
 			buildConfigurations = (
 				5409DB062930FD4C0065163C /* Debug */,
 				5409DB072930FD4C0065163C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5461019A294708E700701D47 /* Build configuration list for PBXNativeTarget "DockExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5461019B294708E700701D47 /* Debug */,
+				5461019C294708E700701D47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
