@@ -91,6 +91,9 @@
 		54ADDFC3292A0BAB00A1CAC3 /* AddNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFC2292A0BAB00A1CAC3 /* AddNewTask.swift */; };
 		54ADDFC5292A771100A1CAC3 /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ADDFC4292A771100A1CAC3 /* DynamicFilteredView.swift */; };
 		54CE2F5D29377E1B00CF5DA0 /* MagnificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE2F5C29377E1B00CF5DA0 /* MagnificationApp.swift */; };
+		54E8E7A2294B271400AA6F0A /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E7A1294B271400AA6F0A /* View+Extensions.swift */; };
+		54E8E7A4294B275D00AA6F0A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E7A3294B275D00AA6F0A /* MainView.swift */; };
+		54E8E7A6294B28C700AA6F0A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E8E7A5294B28C700AA6F0A /* ProfileView.swift */; };
 		54F15F93294220C400277858 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 54F15F92294220C400277858 /* FirebaseAuth */; };
 		54F15F972942214B00277858 /* SocialMediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F15F962942214B00277858 /* SocialMediaApp.swift */; };
 		54F15F9B294221DD00277858 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F15F9A294221DD00277858 /* LoginView.swift */; };
@@ -219,6 +222,9 @@
 		54ADDFC2292A0BAB00A1CAC3 /* AddNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTask.swift; sourceTree = "<group>"; };
 		54ADDFC4292A771100A1CAC3 /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
 		54CE2F5C29377E1B00CF5DA0 /* MagnificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationApp.swift; sourceTree = "<group>"; };
+		54E8E7A1294B271400AA6F0A /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		54E8E7A3294B275D00AA6F0A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		54E8E7A5294B28C700AA6F0A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		54F15F962942214B00277858 /* SocialMediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaApp.swift; sourceTree = "<group>"; };
 		54F15F9A294221DD00277858 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		54F15F9C294241CD00277858 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -635,6 +641,32 @@
 			path = "Magnification App";
 			sourceTree = "<group>";
 		};
+		54E8E79D294B268100AA6F0A /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				54E8E7A3294B275D00AA6F0A /* MainView.swift */,
+				54E8E7A5294B28C700AA6F0A /* ProfileView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		54E8E79E294B268600AA6F0A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				54F15F9A294221DD00277858 /* LoginView.swift */,
+				54F15F9C294241CD00277858 /* RegisterView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		54E8E79F294B26E900AA6F0A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				54E8E7A1294B271400AA6F0A /* View+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		54F15F942942210800277858 /* Social Media App */ = {
 			isa = PBXGroup;
 			children = (
@@ -648,8 +680,9 @@
 		54F15F98294221C300277858 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				54F15F9A294221DD00277858 /* LoginView.swift */,
-				54F15F9C294241CD00277858 /* RegisterView.swift */,
+				54E8E79F294B26E900AA6F0A /* Helpers */,
+				54E8E79E294B268600AA6F0A /* Login */,
+				54E8E79D294B268100AA6F0A /* MainView */,
 				5461017A2946DAEE00701D47 /* LoadingView.swift */,
 			);
 			path = View;
@@ -831,6 +864,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				546AC5F829290C180067EAEE /* AnimatedStickyHeaderMainView.swift in Sources */,
+				54E8E7A4294B275D00AA6F0A /* MainView.swift in Sources */,
 				54ADDFC3292A0BAB00A1CAC3 /* AddNewTask.swift in Sources */,
 				54ADDFB82929F70D00A1CAC3 /* TaskManagerView.swift in Sources */,
 				54CE2F5D29377E1B00CF5DA0 /* MagnificationApp.swift in Sources */,
@@ -889,6 +923,8 @@
 				546E8303291F2E9D00DB556E /* SwiftExerciseApp.swift in Sources */,
 				546E8318291F3AAF00DB556E /* StudentViewModel.swift in Sources */,
 				54832256293B1ECF000C9FA8 /* StockApp.swift in Sources */,
+				54E8E7A6294B28C700AA6F0A /* ProfileView.swift in Sources */,
+				54E8E7A2294B271400AA6F0A /* View+Extensions.swift in Sources */,
 				546E8316291F396700DB556E /* Model.swift in Sources */,
 				54832292293BB9CC000C9FA8 /* LoadingStateView.swift in Sources */,
 				54ADDFC1292A023800A1CAC3 /* TaskViewModel.swift in Sources */,

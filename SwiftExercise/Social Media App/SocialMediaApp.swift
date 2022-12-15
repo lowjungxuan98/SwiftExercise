@@ -14,12 +14,7 @@ struct SocialMediaApp: View {
         // MARK: Redirecting User Based on Log Status
 
         if logStatus {
-            VStack {
-                Text("Main View")
-                Button("Logout") {
-                    logStatus = false
-                }
-            }
+            MainView()
         } else {
             LoginView()
         }
