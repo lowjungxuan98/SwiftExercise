@@ -25,38 +25,62 @@ struct ProfileView: View {
 
     var body: some View {
         NavigationStack {
-            ScrollView(.vertical, showsIndicators: false) {}
-                .refreshable {
-                    // MARK: Refresh User Data
-                }
-                .navigationTitle("My Profile")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Menu {
-                            // MARK: Two Action's
+            VStack {
+                if let myProfile {
+                    ReusableProfileContent(user: myProfile)
+                        .refreshable {
+                            // MARK: Refresh User Data
 
-                            // 1. Logout
-                            Button("Logout", action: logOutUser)
-                            // 2. Delete Account
-                            Button("Delete Account", role: .destructive, action: deleteAccount)
-                        } label: {
-                            Image(systemName: "ellipsis")
-                                .rotationEffect(.init(degrees: 90))
-                                .tint(.black)
-                                .scaleEffect(0.8)
+                            self.myProfile = nil
+                            await fetchUserData()
                         }
+                } else {
+                    ProgressView()
+                }
+            }
+            .navigationTitle("My Profile")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Menu {
+                        // MARK: Two Action's
+
+                        // 1. Logout
+                        Button("Logout", action: logOutUser)
+                        // 2. Delete Account
+                        Button("Delete Account", role: .destructive, action: deleteAccount)
+                    } label: {
+                        Image(systemName: "ellipsis")
+                            .rotationEffect(.init(degrees: 90))
+                            .tint(.black)
+                            .scaleEffect(0.8)
                     }
                 }
+            }
         }
         .overlay {
             LoadingView(show: $isLoading)
         }
         .alert(errorMessage, isPresented: $showError) {}
+        .task {
+            // This Modifier is like onAppear
+            // So Fetching for the First Time only
+            if myProfile != nil { return }
+
+            // MARK: Initial Fetch
+
+            await fetchUserData()
+        }
     }
 
     // MARK: Fetching User Data
 
-    func fetchUserData() async {}
+    func fetchUserData() async {
+        guard let userID = Auth.auth().currentUser?.uid else { return }
+        guard let user = try? await Firestore.firestore().collection("Users").document(userID).getDocument(as: User.self) else { return }
+        await MainActor.run(body: {
+            myProfile = user
+        })
+    }
 
     // MARK: Logging User Out
 

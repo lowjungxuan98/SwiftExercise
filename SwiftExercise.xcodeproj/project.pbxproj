@@ -13,6 +13,8 @@
 		5409DAFE2930FD4A0065163C /* CryptoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5409DAFD2930FD4A0065163C /* CryptoWidget.swift */; };
 		5409DB002930FD4C0065163C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5409DAFF2930FD4C0065163C /* Assets.xcassets */; };
 		5409DB042930FD4C0065163C /* CryptoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5409DAF42930FD4A0065163C /* CryptoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		540C547A294C04EC00CA6C9D /* ReusableProfileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540C5479294C04EC00CA6C9D /* ReusableProfileContent.swift */; };
+		540C547D294C065700CA6C9D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 540C547C294C065700CA6C9D /* SDWebImageSwiftUI */; };
 		543F78F02931C40A008FABF8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F78EF2931C40A008FABF8 /* Home.swift */; };
 		543F78F22931C486008FABF8 /* FlightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F78F12931C486008FABF8 /* FlightApp.swift */; };
 		543F78F52934BA7E008FABF8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543F78F42934BA7E008FABF8 /* Card.swift */; };
@@ -147,6 +149,7 @@
 		5409DAFD2930FD4A0065163C /* CryptoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWidget.swift; sourceTree = "<group>"; };
 		5409DAFF2930FD4C0065163C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5409DB012930FD4C0065163C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540C5479294C04EC00CA6C9D /* ReusableProfileContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProfileContent.swift; sourceTree = "<group>"; };
 		543F78EF2931C40A008FABF8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		543F78F12931C486008FABF8 /* FlightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightApp.swift; sourceTree = "<group>"; };
 		543F78F42934BA7E008FABF8 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -261,6 +264,7 @@
 				5483225F293BABF7000C9FA8 /* StocksAPI in Frameworks */,
 				546E8321291F89AA00DB556E /* SocketIO in Frameworks */,
 				54F15F9F2942BFE500277858 /* FirebaseFirestore in Frameworks */,
+				540C547D294C065700CA6C9D /* SDWebImageSwiftUI in Frameworks */,
 				54F15FA32942BFE500277858 /* FirebaseStorage in Frameworks */,
 				54F15F93294220C400277858 /* FirebaseAuth in Frameworks */,
 				54F15FA12942BFE500277858 /* FirebaseFirestoreSwift in Frameworks */,
@@ -646,6 +650,7 @@
 			children = (
 				54E8E7A3294B275D00AA6F0A /* MainView.swift */,
 				54E8E7A5294B28C700AA6F0A /* ProfileView.swift */,
+				540C5479294C04EC00CA6C9D /* ReusableProfileContent.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -757,6 +762,7 @@
 				54F15F9E2942BFE500277858 /* FirebaseFirestore */,
 				54F15FA02942BFE500277858 /* FirebaseFirestoreSwift */,
 				54F15FA22942BFE500277858 /* FirebaseStorage */,
+				540C547C294C065700CA6C9D /* SDWebImageSwiftUI */,
 			);
 			productName = SwiftExercise;
 			productReference = 546E82FF291F2E9D00DB556E /* SwiftExercise.app */;
@@ -796,6 +802,7 @@
 				546E831F291F89AA00DB556E /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
 				5483225D293BABF7000C9FA8 /* XCRemoteSwiftPackageReference "StocksAPI" */,
 				54F15F91294220C400277858 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				540C547B294C065700CA6C9D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 546E8300291F2E9D00DB556E /* Products */;
 			projectDirPath = "";
@@ -913,6 +920,7 @@
 				5483229C293BBBD4000C9FA8 /* SearchView.swift in Sources */,
 				5461019E29470D3D00701D47 /* DockAttributes.swift in Sources */,
 				543F78F02931C40A008FABF8 /* Home.swift in Sources */,
+				540C547A294C04EC00CA6C9D /* ReusableProfileContent.swift in Sources */,
 				54832296293BBAD6000C9FA8 /* StockTickerView.swift in Sources */,
 				5461017B2946DAEE00701D47 /* LoadingView.swift in Sources */,
 				543F78F9293590FD008FABF8 /* FlightDetailView.swift in Sources */,
@@ -1285,6 +1293,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		540C547B294C065700CA6C9D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		546E831F291F89AA00DB556E /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
@@ -1312,6 +1328,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		540C547C294C065700CA6C9D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 540C547B294C065700CA6C9D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		546E8320291F89AA00DB556E /* SocketIO */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 546E831F291F89AA00DB556E /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
